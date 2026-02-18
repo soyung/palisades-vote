@@ -648,6 +648,12 @@ export default function App() {
                   <div style={{ fontSize: 12.5, color: "#7f1d1d", lineHeight: 1.65 }}>{d.death}</div>
                 </div>
               )}
+                        </>); })()}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </section>
 
