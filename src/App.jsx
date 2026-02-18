@@ -1338,10 +1338,10 @@ export default function App() {
                     return (
                       <tr key={ri} style={{ borderBottom: `1px solid ${C.border}`, background: ri % 2 === 0 ? C.surface : C.bg }}>
                         <td style={{ padding: "10px 14px", color: T.sub, fontSize: 11, fontWeight: 600, verticalAlign: "top" }}>{row.feature}</td>
-                        <td style={{ padding: "10px 14px", color: isCrdBetter ? C.crd : isDrdBetter ? T.faint : T.body, verticalAlign: "top", lineHeight: 1.55, fontSize: 12.5 }}>
+                        <td style={{ padding: "10px 14px", color: T.body, verticalAlign: "top", lineHeight: 1.55, fontSize: 12.5 }}>
                           {row.crd}
                         </td>
-                        <td style={{ padding: "10px 14px", color: isDrdBetter ? C.drd : isCrdBetter ? T.faint : T.body, verticalAlign: "top", lineHeight: 1.55, fontSize: 12.5 }}>
+                        <td style={{ padding: "10px 14px", color: T.body, verticalAlign: "top", lineHeight: 1.55, fontSize: 12.5 }}>
                           {row.drd}
                         </td>
                       </tr>
