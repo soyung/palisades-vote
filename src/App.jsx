@@ -382,10 +382,10 @@ const DISTRICTS = {
     trigger:
       "Governor-declared state of emergency (Gov. Code §8625) required. Resolution must be adopted within 2 years of disaster proclamation.",
     formationTime:
-      "Expedited — months instead of years; protest rights substantially removed",
+      "Expedited — months instead of years; protest thresholds (25/50%) removed",
     duration: "Up to 45 years from first bond issuance",
     protestRights:
-      "SUBSTANTIALLY REDUCED — normal 25/50% thresholds removed to enable speed",
+      "Protest thresholds (25/50%) removed — formation can proceed without supermajority support",
     schoolTax: "Cannot capture — school share excluded",
     govBody: "Same PFA (3 elected + 2 public); initiated by county Board of Supervisors or city council",
     moneyRaised: (
@@ -446,7 +446,7 @@ const CRD_DRD_ROWS = [
     drd: "Governor-declared state of emergency required (Gov. Code §8625)" },
   { feature: "Formation Window", crd: "Any time — no deadline", drd: "Resolution must be adopted within 2 years of disaster proclamation" },
   { feature: "Formation Timeline", crd: "1–2 years (standard EIFD process)", drd: "Expedited — months, not years" },
-  { feature: "Protest Rights", crd: "Preserved: < 25% approved | 25–50% → election | > 50% → halted", drd: "Substantially removed to enable speed" },
+  { feature: "Protest Rights", crd: "Preserved: < 25% approved | 25–50% → election | > 50% → halted", drd: "Protest thresholds (25/50%) removed — formation can proceed without supermajority support" },
   { feature: "Who Can Initiate", crd: "City, county, OR special district", drd: "City or county only (Board of Supervisors or city council)" },
   { feature: "Boundary Rules", crd: "Any area facing climate risk — no special constraint", drd: "Must be within declared disaster area. Adjacent areas ≤ 20% of total" },
   { feature: "Eligible Spending — Climate",
@@ -1147,7 +1147,7 @@ export default function App() {
                               {d.death && (
                                 <div style={{ background: "#fef2f2", border: "1px solid #fecaca", borderRadius: 7, padding: "10px 12px", marginTop: 12 }}>
                                   <div style={{ fontSize: 8.5, color: "#dc2626", textTransform: "uppercase", letterSpacing: 1, marginBottom: 5 }}>
-                                    {d.id === "rda" ? "Why It Ended" : "Why It Was Superseded"}
+                                    {d.id === "rda" ? "Why It Went Extinct" : "Why It Was Superseded"}
                                   </div>
                                   <div style={{ fontSize: 12.5, color: "#7f1d1d", lineHeight: 1.65 }}>{d.death}</div>
                                 </div>
