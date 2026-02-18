@@ -14,6 +14,7 @@ const C = {
   faint: "#9ca3af",
 };
 
+
 const DISTRICTS = {
   rda: {
     id: "rda", label: "RDA", full: "Redevelopment Agency", color: C.rda,
@@ -81,7 +82,7 @@ const DISTRICTS = {
     protestRights: "Same as EIFD: < 25% / 25–50% / > 50% thresholds",
     schoolTax: "Cannot capture — school share excluded",
     govBody: "Same PFA structure as EIFD; special districts (not just cities/counties) may also participate",
-    moneyRaised: "Tax increment (like EIFD) PLUS benefit assessments, special taxes, property-related fees, GO bonds (all requiring voter approval at applicable thresholds)",
+    moneyRaised: <>Tax increment (like EIFD) PLUS benefit assessments, special taxes, property-related fees, GO bonds<sup style={{fontSize:9,color:"#047857",fontWeight:700}}>*</sup> (all requiring voter approval)</>,
     eligibleSpend: ["Sea level rise mitigation and adaptation","Extreme heat infrastructure (cooling centers, urban forestry)","Wildfire risk reduction","Drought resilience (water infrastructure)","Flood risk reduction","Extreme cold mitigation","Any project designed to address climate change mitigation, adaptation, or resilience"],
     extras: ["Must prepare annual expenditure plan, operating budget, and capital improvement budget","Skilled and trained workforce required for all projects","Special districts may participate (not available in plain EIFD)"],
     examples: [
@@ -93,13 +94,13 @@ const DISTRICTS = {
     status: "ACTIVE — disaster subtype of CRD",
     law: <><a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB782" target="_blank" rel="noopener noreferrer" style={{color:"inherit",fontWeight:600,textDecoration:"underline",textDecorationColor:"#b91c1c",textUnderlineOffset:2}}>SB 782 (2025, urgency statute)</a>, amending <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=62300" target="_blank" rel="noopener noreferrer" style={{color:"inherit",textDecoration:"underline",textDecorationColor:"#b91c1c",textUnderlineOffset:2}}>Gov. Code §62300</a></>,
     year: 2025,
-    trigger: <><strong style={{color:"#b91c1c"}}>Governor-declared state of emergency required</strong> (Gov. Code §8625). Resolution must be adopted within 2 years of disaster proclamation.</>,
+    trigger: "Governor-declared state of emergency (Gov. Code §8625) required. Resolution must be adopted within 2 years of disaster proclamation.",
     formationTime: "Expedited — months instead of years; protest rights substantially removed",
     duration: "Renter: up to 55 years | Owner: up to 45 years from first bond issuance",
     protestRights: "SUBSTANTIALLY REDUCED — normal 25/50% thresholds removed to enable speed",
     schoolTax: "Cannot capture — school share excluded",
     govBody: "Same PFA (3 elected + 2 public); initiated by county Board of Supervisors or city council",
-    moneyRaised: "Same as CRD: TIF + benefit assessments + special taxes + GO bonds (voter approval still required for special taxes/GO bonds)",
+    moneyRaised: <>Same as CRD: TIF + benefit assessments + special taxes + GO bonds<sup style={{fontSize:9,color:"#b91c1c",fontWeight:700}}>*</sup> (voter approval still required)</>,
     eligibleSpend: ["Acquiring, demolishing, relocating, repairing, or replacing disaster-damaged structures","Low- and moderate-income housing damaged or destroyed by disaster","Utility undergrounding and hardening (electrical lines, etc.)","Water and energy resource access during emergencies","Economic recovery from the disaster","Mitigating risk of future disaster","All CRD-eligible climate resilience projects"],
     boundaryRule: "Must be within the declared disaster area. Adjacent (non-damaged) areas may be included but cannot exceed 20% of total district area.",
     examples: [
@@ -130,7 +131,7 @@ const CRD_DRD_ROWS = [
   {
     feature: "Formation Trigger",
     crd: "None — any city, county, or special district can initiate proactively",
-    drd: "Governor-declared state of emergency required (Gov. Code §8625)",
+    drd: <><strong style={{color:"#b91c1c",fontWeight:700}}>Governor-declared state of emergency required</strong> (Gov. Code §8625)</>,
   },
   {
     feature: "Formation Window",
@@ -609,6 +610,11 @@ export default function App() {
                 </div>
               </div>
 
+              {(d.id === "crd" || d.id === "drd") && (
+                <div style={{ fontSize: 11, color: "#6b7280", marginTop: 8, padding: "8px 12px", background: "#f7f6f3", borderRadius: 6, border: "1px solid #e2e0db", lineHeight: 1.6 }}>
+                  <sup style={{ fontSize: 9, fontWeight: 700, color: d.color }}>*</sup> <strong>GO bonds (General Obligation bonds)</strong> — 일반 TIF 수익이 아닌 district 내 property owner의 재산세 전체를 담보로 하는 채권. TIF 채권보다 더 많은 금액 조달 가능하지만, property owner에게 직접적인 부담이 생기므로 투표 승인 필요.
+                </div>
+              )}
               {d.boundaryRule && (
                 <div style={{ background: `${d.color}08`, border: `1px solid ${d.color}20`, borderRadius: 7, padding: "10px 12px", marginTop: 12, marginBottom: 10 }}>
                   <div style={{ fontSize: 8.5, color: d.color, textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>Boundary Rule (DRD-specific)</div>
