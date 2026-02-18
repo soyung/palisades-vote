@@ -382,7 +382,7 @@ const DISTRICTS = {
     trigger:
       "Governor-declared state of emergency (Gov. Code §8625) required. Resolution must be adopted within 2 years of disaster proclamation.",
     formationTime:
-      "Expedited — months instead of years; protest thresholds (25/50%) removed",
+      "Expedited — months instead of years",
     duration: "Up to 45 years from first bond issuance",
     protestRights:
       "Protest thresholds (25/50%) removed — formation can proceed without supermajority support",
