@@ -687,6 +687,7 @@ export default function App() {
     { id: "examples", label: "Example Districts" },
     { id: "why", label: "Why CRD + DRD?" },
     { id: "refs", label: "References" },
+    { id: "glossary", label: "Glossary" },
   ];
 
   const scrollTo = (id) => {
@@ -1123,6 +1124,22 @@ export default function App() {
                                 </div>
                               )}
 
+                              {d.id === "crd" && (
+                                <div style={{ marginTop: 20, padding: "16px 18px", background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 8 }}>
+                                  <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase", color: C.crd, marginBottom: 6 }}>Resilience District Incubator</div>
+                                  <div style={{ fontSize: 12.5, color: T.body, lineHeight: 1.65, marginBottom: 10 }}>
+                                    CA FWD (California Forward) and Resilient Cities Catalyst run a hands-on technical assistance program to help communities move from CRD statute to practice. The Incubator provides feasibility support, legal and financial guidance, peer learning across pilot communities, and practical toolkits — bridging the capacity gap for jurisdictions that lack in-house expertise to form a district.
+                                  </div>
+                                  <div style={{ fontSize: 11.5, color: T.body, lineHeight: 1.6, marginBottom: 10 }}>
+                                    <strong>What communities get:</strong> hands-on design assistance, national peer network, advisory group (insurance, finance, risk modeling), and templates for IFPs and cross-sector partnerships.
+                                  </div>
+                                  <div style={{ fontSize: 11, color: T.sub, marginBottom: 8 }}>Currently launching with pilot communities in California and Connecticut. Priority consideration will be given to Statements of Intent received by February 20.</div>
+                                  <a href="https://cafwd.org/fiscal-resilience/resilience-district-incubator/" target="_blank" rel="noopener noreferrer" style={{ fontSize: 11.5, color: C.crd, textDecoration: "none", fontWeight: 600 }}>
+                                    Learn more at CA FWD ↗
+                                  </a>
+                                </div>
+                              )}
+
                               {d.boundaryRule && (
                                 <div style={{ background: `${d.color}08`, border: `1px solid ${d.color}20`, borderRadius: 7, padding: "10px 12px", marginTop: 12, marginBottom: 10 }}>
                                   <div style={{ fontSize: 8.5, color: d.color, textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>Boundary Rule (DRD-specific)</div>
@@ -1150,6 +1167,22 @@ export default function App() {
                                     {d.id === "rda" ? "Why It Went Extinct" : "Why It Was Superseded"}
                                   </div>
                                   <div style={{ fontSize: 12.5, color: "#7f1d1d", lineHeight: 1.65 }}>{d.death}</div>
+                                </div>
+                              )}
+
+                              {d.examples && d.examples.length > 0 && (
+                                <div style={{ marginTop: 16 }}>
+                                  <div style={{ fontSize: 8.5, color: T.faint, textTransform: "uppercase", letterSpacing: 1, marginBottom: 9 }}>Examples</div>
+                                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
+                                    {d.examples.map((ex, i) => (
+                                      <div key={i} style={{ background: C.bg, borderRadius: 7, padding: "10px 12px", borderTop: `2px solid ${d.color}`, border: `1px solid ${d.color}15` }}>
+                                        <div style={{ fontSize: 12.5, fontWeight: 600, color: T.heading, marginBottom: 4, lineHeight: 1.4 }}>{ex.name}</div>
+                                        {ex.year && <div style={{ fontSize: 10.5, color: d.color, marginBottom: 5 }}>{ex.year}</div>}
+                                        <div style={{ fontSize: 11.5, color: T.sub, marginBottom: 5, lineHeight: 1.5 }}><strong style={{ color: T.body }}>Reason:</strong> {ex.reason}</div>
+                                        <div style={{ fontSize: 11, color: T.faint, lineHeight: 1.5, fontStyle: "italic" }}>{ex.notes}</div>
+                                      </div>
+                                    ))}
+                                  </div>
                                 </div>
                               )}
                             </>
@@ -1485,6 +1518,7 @@ export default function App() {
                 color: C.muted,
                 links: [
                   { label: "SCAG — EIFD Overview", sub: "Southern California Association of Governments", url: "https://scag.ca.gov/post/enhanced-infrastructure-financing-district-eifd" },
+                  { label: "CA FWD — Resilience District Incubator", sub: "California Forward · Technical assistance program for CRD formation", url: "https://cafwd.org/fiscal-resilience/resilience-district-incubator/" },
                   { label: "CivicWell — SB 852 Signed Into Law", sub: "Co-sponsor analysis · September 2022", url: "https://civicwell.org/civic-news/sb852-signed/" },
                   { label: "SB 852 Fact Sheet (PDF)", sub: "Senator Dodd's office via CivicWell", url: "https://civicwell.org/wp-content/uploads/2022/02/SB-852-fact-sheet.pdf" },
                 ],
@@ -1527,6 +1561,76 @@ export default function App() {
               </div>
             ))}
           </section>
+
+          {/* ── GLOSSARY ── */}
+          <section ref={setRef("glossary")} data-section="glossary" style={{ marginBottom: 70 }}>
+            <div style={{ fontSize: 9, letterSpacing: 3, color: T.faint, textTransform: "uppercase", marginBottom: 10 }}>Definitions</div>
+            <h2 style={{ fontSize: 22, fontWeight: 700, color: T.heading, marginBottom: 8 }}>Glossary</h2>
+            <p style={{ fontSize: 13, color: T.sub, marginBottom: 24 }}>Key terms and abbreviations used throughout this reference.</p>
+
+            <div style={{ marginBottom: 28 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: T.sub, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 12, borderBottom: `1px solid ${C.border}`, paddingBottom: 6 }}>District Types</div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 10 }}>
+                {[
+                  { term: "TIF", full: "Tax Increment Financing", def: "A mechanism that captures the increase in property tax revenue within a designated district as property values rise, using that increment to fund public improvements." },
+                  { term: "RDA", full: "Redevelopment Agency", def: "California's original TIF tool (1945–2012). Used tax increment to fund redevelopment in blighted areas. Required blight designation. Abolished by AB 1x26." },
+                  { term: "IFD", full: "Infrastructure Financing District", def: "A parallel TIF tool created in 1990. No blight requirement, but the 2/3 voter approval threshold made it nearly impossible to form in practice. Law still on the books." },
+                  { term: "EIFD", full: "Enhanced Infrastructure Financing District", def: "IFD's 2014 overhaul (SB 628). Dropped the 2/3 voter threshold, added multi-agency governance, and broadened eligible project types." },
+                  { term: "CRD", full: "Climate Resilience District", def: "A subtype of EIFD (SB 852, 2022) for climate-related projects. Adds special tax and GO bond powers. No disaster required to form." },
+                  { term: "DRD", full: "Disaster Recovery District", def: "A subtype of CRD (SB 782, 2025) triggered by a Governor-declared state of emergency. Fast-tracked formation, protest thresholds removed. Revenue restricted to disaster-recovery purposes." },
+                ].map(({ term, full, def }) => (
+                  <div key={term} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 8, padding: "14px 16px" }}>
+                    <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 5 }}>
+                      <span style={{ fontSize: 13, fontWeight: 700, color: T.heading, fontFamily: "monospace" }}>{term}</span>
+                      <span style={{ fontSize: 11, color: T.sub }}>{full}</span>
+                    </div>
+                    <div style={{ fontSize: 12, color: T.body, lineHeight: 1.6 }}>{def}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ marginBottom: 28 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: T.sub, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 12, borderBottom: `1px solid ${C.border}`, paddingBottom: 6 }}>Financing &amp; Legal Terms</div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 10 }}>
+                {[
+                  { term: "GO Bond", full: "General Obligation Bond", def: "A bond secured by the full property-taxing power of all owners within the district — not just TIF revenue. Allows larger borrowing but requires voter approval." },
+                  { term: "PFA", full: "Public Financing Authority", def: "The governing board of an EIFD or CRD. Must include at least 3 elected officials from participating agencies and 2 public members." },
+                  { term: "IFP", full: "Infrastructure Financing Plan", def: "The core planning document for EIFDs and subtypes. Defines the district boundary, eligible projects, revenue sources, and financing timeline." },
+                  { term: "LMI", full: "Low- and Moderate-Income", def: "A household income classification used in California housing law. Affordable housing funded through these districts must be deed-restricted for LMI households (owner-occupied: 45 yrs; rented: 55 yrs)." },
+                  { term: "CEQA", full: "California Environmental Quality Act", def: "State law requiring environmental review of public projects. DRDs receive expedited CEQA review for eligible disaster recovery projects." },
+                  { term: "SB / AB", full: "Senate Bill / Assembly Bill", def: "California legislation. Key bills: SB 852 (CRD, 2022), SB 782 (DRD, 2025), SB 628 (EIFD, 2014), AB 1x26 (abolished RDAs, 2011)." },
+                ].map(({ term, full, def }) => (
+                  <div key={term} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 8, padding: "14px 16px" }}>
+                    <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 5 }}>
+                      <span style={{ fontSize: 13, fontWeight: 700, color: T.heading, fontFamily: "monospace" }}>{term}</span>
+                      <span style={{ fontSize: 11, color: T.sub }}>{full}</span>
+                    </div>
+                    <div style={{ fontSize: 12, color: T.body, lineHeight: 1.6 }}>{def}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div style={{ fontSize: 11, fontWeight: 700, color: T.sub, textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 12, borderBottom: `1px solid ${C.border}`, paddingBottom: 6 }}>Organizations</div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 10 }}>
+                {[
+                  { term: "RCPA", full: "Regional Climate Protection Authority", def: "Sonoma County's multi-agency climate body — deemed California's first CRD under SB 852." },
+                  { term: "SCAG", full: "Southern California Association of Governments", def: "Regional planning agency covering six counties in Southern California. Relevant to Sustainable Communities Strategy planning that EIFDs and CRDs can finance." },
+                ].map(({ term, full, def }) => (
+                  <div key={term} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 8, padding: "14px 16px" }}>
+                    <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 5 }}>
+                      <span style={{ fontSize: 13, fontWeight: 700, color: T.heading, fontFamily: "monospace" }}>{term}</span>
+                      <span style={{ fontSize: 11, color: T.sub }}>{full}</span>
+                    </div>
+                    <div style={{ fontSize: 12, color: T.body, lineHeight: 1.6 }}>{def}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
           {/* ── FOOTER ── */}
           <div style={{
             borderTop: `1px solid ${C.border}`,
