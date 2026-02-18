@@ -1332,8 +1332,8 @@ export default function App() {
                   {CRD_DRD_ROWS.map((row, ri) => {
                     const crdStr = typeof row.crd === "string" ? row.crd : "";
                     const drdStr = typeof row.drd === "string" ? row.drd : "";
-                    const isCrdBetter = crdStr.startsWith("✓") && drdStr.startsWith("✗");
-                    const isDrdBetter = drdStr.startsWith("✓") && crdStr.startsWith("✗");
+                    const isCrdBetter = crdStr.startsWith("✓") && !drdStr.startsWith("✓");
+			const isDrdBetter = drdStr.startsWith("✓") && !crdStr.startsWith("✓");
 
                     return (
                       <tr key={ri} style={{ borderBottom: `1px solid ${C.border}`, background: ri % 2 === 0 ? C.surface : C.bg }}>
