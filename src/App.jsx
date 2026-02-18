@@ -1527,6 +1527,31 @@ export default function App() {
               </div>
             ))}
           </section>
+          {/* ── FOOTER ── */}
+          <div style={{
+            borderTop: `1px solid ${C.border}`,
+            paddingTop: 24,
+            marginTop: 8,
+            display: "flex",
+            flexDirection: "column",
+            gap: 10,
+          }}>
+            <div style={{ fontSize: 11, color: T.faint }}>
+              <span style={{ fontWeight: 600, color: T.sub }}>Last updated:</span> February 18, 2026
+            </div>
+            <div style={{
+              background: "#fffbeb",
+              border: "1px solid #fde68a",
+              borderRadius: 8,
+              padding: "12px 16px",
+              fontSize: 11.5,
+              color: "#92400e",
+              lineHeight: 1.7,
+            }}>
+              <strong>Disclaimer:</strong> This reference is intended as an overview only and may not reflect the most recent amendments, implementing regulations, or agency guidance. Statutory provisions — including eligible spending categories, formation requirements, and revenue restrictions — should be verified directly against current bill text and official sources before relying on them for planning, legal, or financial purposes. Links to legislation are provided for convenience; always double-check the implications of any law or bill with qualified legal counsel.
+            </div>
+          </div>
+
         </div>
       </main>
     </div>
