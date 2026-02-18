@@ -160,7 +160,7 @@ const DISTRICTS = {
     id: "eifd",
     label: "EIFD",
     summary:
-      "IFD's major 2014 upgrade: multi-agency, broader scope, no blight requirement.",
+      "IFD's major 2014 upgrade: multi-agency, broader scope, dropped the 2/3 voter threshold.",
     full: "Enhanced Infrastructure Financing District",
     color: C.eifd,
     status: "ACTIVE — base tool",
