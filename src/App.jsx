@@ -235,7 +235,7 @@ function BranchingTimeline({ onSelectDistrict }) {
     { id: "ifd",  x: 90,  y: 265, r: 22, label: "IFD",  sub: "1990", note: "parallel alternative" },
     { id: "eifd", x: 310, y: 155, r: 30, label: "EIFD", sub: "2014", note: "real foundation" },
     { id: "crd",  x: 510, y: 110, r: 22, label: "CRD",  sub: "2022", note: "climate subtype" },
-    { id: "drd",  x: 630, y: 200, r: 20, label: "DRD",  sub: "2025", note: "disaster subtype" },
+    { id: "drd",  x: 630, y: 195, r: 20, label: "DRD",  sub: "2025", note: "disaster subtype" },
   ];
   const nc = (id) => nodes.find(n => n.id === id);
 
@@ -532,7 +532,8 @@ export default function App() {
                       <span style={{ fontSize: 12, color: T.sub }}>{dist.full}</span>
                       {item.tag === "sibling" && <span style={{ fontSize: 10, color: C.ifd, fontStyle: "italic", background: `${C.ifd}12`, padding: "1px 7px", borderRadius: 4 }}>parallel alternative to RDA</span>}
                       {item.tag === "absorbs" && <span style={{ fontSize: 10, color: C.eifd, fontStyle: "italic", background: `${C.eifd}12`, padding: "1px 7px", borderRadius: 4 }}>absorbs RDA function + IFD legal DNA</span>}
-                      {item.tag === "crd-sub" && <span style={{ fontSize: 10, color: C.crd, fontStyle: "italic", background: `${C.crd}12`, padding: "1px 7px", borderRadius: 4 }}>subtype of CRD → subtype of EIFD</span>}
+                      {item.tag === "crd-type" && <span style={{ fontSize: 10, color: C.crd, fontStyle: "italic", background: `${C.crd}12`, padding: "1px 7px", borderRadius: 4 }}>subtype of EIFD</span>}
+                   {item.tag === "crd-sub" && <span style={{ fontSize: 10, color: C.drd, fontStyle: "italic", background: `${C.drd}12`, padding: "1px 7px", borderRadius: 4 }}>subtype of CRD → subtype of EIFD</span>}
                       <span style={{ fontSize: 11, color: T.faint, marginLeft: "auto" }}>{dist.year}</span>
                     </div>
                     <p style={{ fontSize: 12.5, color: T.sub, margin: 0, lineHeight: 1.55 }}>{item.note}</p>
@@ -577,8 +578,7 @@ export default function App() {
                     </button>
                     {isOpen && (
                       <div style={{ borderTop: `1px solid ${dist.color}20`, padding: 24 }}>
-                        {(() => { const d = dist; return (<>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 18, flexWrap: "wrap", gap: 10 }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 18, flexWrap: "wrap", gap: 10 }}>
                 <div>
                   <h3 style={{ fontSize: 21, fontWeight: 700, color: d.color, margin: 0 }}>{d.label}</h3>
                   <div style={{ fontSize: 12.5, color: T.sub, marginTop: 3 }}>{d.full}</div>
@@ -648,7 +648,6 @@ export default function App() {
                   <div style={{ fontSize: 12.5, color: "#7f1d1d", lineHeight: 1.65 }}>{d.death}</div>
                 </div>
               )}
-                        </>); })()}
                       </div>
                     )}
                   </div>
@@ -929,7 +928,6 @@ export default function App() {
                 </div>
               </div>
             ))}
-          </section></>); })()}
                       </div>
                     )}
                   </div>
