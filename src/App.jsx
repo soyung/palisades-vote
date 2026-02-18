@@ -1147,7 +1147,7 @@ export default function App() {
                               {d.death && (
                                 <div style={{ background: "#fef2f2", border: "1px solid #fecaca", borderRadius: 7, padding: "10px 12px", marginTop: 12 }}>
                                   <div style={{ fontSize: 8.5, color: "#dc2626", textTransform: "uppercase", letterSpacing: 1, marginBottom: 5 }}>
-                                    Why It Ended / Was Superseded
+                                    {d.id === "rda" ? "Why It Ended" : "Why It Was Superseded"}
                                   </div>
                                   <div style={{ fontSize: 12.5, color: "#7f1d1d", lineHeight: 1.65 }}>{d.death}</div>
                                 </div>
