@@ -551,7 +551,7 @@ function BranchingTimeline({ onSelectDistrict }) {
           opacity="0.45"
           markerEnd="url(#arr-ifd)"
         />
-        <text x="190" y={nc("ifd").y + 20} fill={C.ifd} fontSize="9" fontFamily="Georgia, serif" opacity="0.5" textAnchor="middle">
+        <text x="190" y={nc("ifd").y + 66} fill={C.ifd} fontSize="9" fontFamily="Georgia, serif" opacity="0.5" textAnchor="middle">
           legal DNA →
         </text>
 
@@ -883,7 +883,7 @@ export default function App() {
             <div style={{ fontSize: 9, letterSpacing: 3, color: T.faint, textTransform: "uppercase", marginBottom: 10 }}>History & Lineage</div>
             <h2 style={{ fontSize: 22, fontWeight: 700, color: T.heading, marginBottom: 6 }}>Timeline</h2>
             <p style={{ fontSize: 13, color: T.sub, marginBottom: 22, lineHeight: 1.7 }}>
-              RDA and IFD ran <em>in parallel</em> — not parent-child. EIFD absorbed both when RDA was killed. CRD and DRD are nested subtypes inside EIFD.
+              RDA and IFD ran <em>in parallel</em> — not parent-child. EIFD absorbed both when RDA was dissolved. CRD and DRD are nested subtypes inside EIFD.
               Click any node to jump to its deep-dive.
             </p>
             <div style={{ background: C.surface, borderRadius: 12, padding: "22px 22px 12px", border: `1px solid ${C.border}`, boxShadow: "0 1px 4px rgba(0,0,0,0.06)" }}>
