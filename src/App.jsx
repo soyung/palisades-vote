@@ -199,7 +199,7 @@ const DISTRICTS = {
     year: 2014,
     trigger: "None — proactive; any city or county may initiate at any time",
     formationTime: "1–2 years (resolution of intention → 3 public hearings → IFP adoption)",
-    duration: "Renter: up to 55 years | Owner: up to 45 years from first bond issuance",
+    duration: "Up to 45 years from first bond issuance",
     protestRights: "< 25%: approved without election | 25–50%: election required | > 50%: halted",
     schoolTax: "Cannot capture — school share explicitly excluded",
     govBody:
@@ -299,7 +299,7 @@ const DISTRICTS = {
     trigger:
       "None — proactive; any city, county, or special district may initiate for climate purposes",
     formationTime: "1–2 years (same EIFD process + must adopt annual expenditure plan)",
-    duration: "Renter: up to 55 years | Owner: up to 45 years from first bond issuance",
+    duration: "Up to 45 years from first bond issuance",
     protestRights: "Same as EIFD: < 25% / 25–50% / > 50% thresholds",
     schoolTax: "Cannot capture — school share excluded",
     govBody:
@@ -383,7 +383,7 @@ const DISTRICTS = {
       "Governor-declared state of emergency (Gov. Code §8625) required. Resolution must be adopted within 2 years of disaster proclamation.",
     formationTime:
       "Expedited — months instead of years; protest rights substantially removed",
-    duration: "Renter: up to 55 years | Owner: up to 45 years from first bond issuance",
+    duration: "Up to 45 years from first bond issuance",
     protestRights:
       "SUBSTANTIALLY REDUCED — normal 25/50% thresholds removed to enable speed",
     schoolTax: "Cannot capture — school share excluded",
