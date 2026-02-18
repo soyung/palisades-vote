@@ -734,8 +734,10 @@ export default function App() {
                 </thead>
                 <tbody>
                   {CRD_DRD_ROWS.map((row, ri) => {
-                    const isCrdBetter = row.crd.startsWith("✓") && row.drd.startsWith("✗");
-                    const isDrdBetter = row.drd.startsWith("✓") && row.crd.startsWith("✗");
+                    const crdStr = typeof row.crd === "string" ? row.crd : "";
+                    const drdStr = typeof row.drd === "string" ? row.drd : "";
+                    const isCrdBetter = crdStr.startsWith("✓") && drdStr.startsWith("✗");
+                    const isDrdBetter = drdStr.startsWith("✓") && crdStr.startsWith("✗");
                     return (
                       <tr key={ri} style={{ borderBottom: `1px solid ${C.border}`, background: ri % 2 === 0 ? C.surface : C.bg }}>
                         <td style={{ padding: "10px 14px", color: T.sub, fontSize: 11, fontWeight: 600, verticalAlign: "top" }}>{row.feature}</td>
