@@ -18,7 +18,7 @@ const DISTRICTS = {
   rda: {
     id: "rda", label: "RDA", full: "Redevelopment Agency", color: C.rda,
     status: "ABOLISHED 2012",
-    law: <><a href="https://law.justia.com/codes/california/2011/hsc/division-24/33000-33013/33000" target="_blank" rel="noopener noreferrer" style={{color:"inherit",textDecoration:"underline",textDecorationColor:"#d97706",textUnderlineOffset:2}}>Community Redevelopment Law (H&S Code §33000)</a></>,
+    law: <><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=33000" target="_blank" rel="noopener noreferrer" style={{color:"inherit",textDecoration:"underline",textDecorationColor:"#92400e",textUnderlineOffset:2}}>Community Redevelopment Law (H&S Code §33000) ↗</a></>,
     year: 1945, endYear: 2012,
     trigger: "Designation of a 'blighted' area by the city/county",
     formationTime: "6–18 months",
@@ -38,7 +38,7 @@ const DISTRICTS = {
   ifd: {
     id: "ifd", label: "IFD", full: "Infrastructure Financing District", color: C.ifd,
     status: "SUPERSEDED by EIFD",
-    law: <><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=53395" target="_blank" rel="noopener noreferrer" style={{color:"inherit",textDecoration:"underline",textDecorationColor:"#71717a",textUnderlineOffset:2}}>Gov. Code §53395 et seq.</a> (enacted 1990)</>,
+    law: <><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=53395" target="_blank" rel="noopener noreferrer" style={{color:"inherit",textDecoration:"underline",textDecorationColor:"#52525b",textUnderlineOffset:2}}>Gov. Code §53395 et seq. ↗</a> (enacted 1990)</>,
     year: 1990,
     trigger: "None — proactive; city or county legislative body initiates",
     formationTime: "1–2 years",
