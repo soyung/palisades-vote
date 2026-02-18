@@ -471,7 +471,7 @@ function BranchingTimeline({ onSelectDistrict }) {
 
   const nodes = [
     { id: "rda", x: 70, y: 80, r: 28, label: "RDA", sub: "1945", note: "first-generation TIF" },
-    { id: "ifd", x: 170, y: 230, r: 22, label: "IFD", sub: "1990", note: "parallel alternative" },
+    { id: "ifd", x: 170, y: 195, r: 22, label: "IFD", sub: "1990", note: "parallel alternative" },
     { id: "eifd", x: 310, y: 155, r: 30, label: "EIFD", sub: "2014", note: "real foundation" },
     { id: "crd", x: 510, y: 95, r: 22, label: "CRD", sub: "2022", note: "climate subtype" },
     { id: "drd", x: 630, y: 145, r: 20, label: "DRD", sub: "2025", note: "disaster subtype" },
