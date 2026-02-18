@@ -668,7 +668,7 @@ function BranchingTimeline({ onSelectDistrict }) {
 // ── MAIN APP ───────────────────────────────────────────────────────────
 export default function App() {
   const [activeSection, setActiveSection] = useState("timeline");
-  const [activeDistrict, setActiveDistrict] = useState(null);
+  const [openDistricts, setOpenDistricts] = useState(new Set());
   const [deepOpen, setDeepOpen] = useState(true);
   const [compareFilter, setCompareFilter] = useState([]);
   const sectionRefs = useRef({});
@@ -699,7 +699,7 @@ export default function App() {
 
   const scrollToDistrict = (districtId) => {
     setDeepOpen(true);
-    setActiveDistrict(districtId);
+    setOpenDistricts(prev => { const next = new Set(prev); next.add(districtId); return next; });
     setTimeout(() => {
       const el = sectionRefs.current["deep"];
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -807,7 +807,7 @@ export default function App() {
               {s.expandable &&
                 deepOpen &&
                 s.sub.map((sub) => {
-                  const isActive = activeDistrict === sub.id && isDeepActive;
+                  const isActive = openDistricts.has(sub.id) && isDeepActive;
                   return (
                     <button
                       key={sub.id}
@@ -986,7 +986,7 @@ export default function App() {
   </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {Object.values(DISTRICTS).map((dist) => {
-                const isOpen = activeDistrict === dist.id;
+                const isOpen = openDistricts.has(dist.id);
 
                 return (
                   <div
@@ -1000,7 +1000,7 @@ export default function App() {
                     }}
                   >
                     <button
-                      onClick={() => setActiveDistrict(isOpen ? null : dist.id)}
+                      onClick={() => setOpenDistricts(prev => { const next = new Set(prev); isOpen ? next.delete(dist.id) : next.add(dist.id); return next; })}
                       style={{
                         width: "100%",
                         display: "flex",
