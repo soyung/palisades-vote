@@ -1293,7 +1293,7 @@ export default function App() {
             </div>
 
             <div style={{ overflowX: "auto", borderRadius: 10, border: `1px solid ${C.border}`, boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}>
-              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12.5, background: C.surface }}>
+              <table style={{ width: "100%", minWidth: 640, borderCollapse: "collapse", fontSize: 12.5, background: C.surface }}>
                 <thead>
                   <tr style={{ borderBottom: `2px solid ${C.border}`, background: C.bg }}>
                     <th
@@ -1305,8 +1305,6 @@ export default function App() {
                         letterSpacing: 1,
                         textTransform: "uppercase",
                         minWidth: 130,
-                        position: "sticky",
-                        left: 0,
                         background: C.bg,
                       }}
                     >
@@ -1332,8 +1330,6 @@ export default function App() {
                             fontWeight: 600,
                             verticalAlign: "top",
                             background: ri % 2 === 0 ? C.surface : C.bg,
-                            position: "sticky",
-                            left: 0,
                           }}
                         >
                           {row.label}
@@ -1397,8 +1393,8 @@ export default function App() {
               </div>
             </div>
 
-            <div style={{ borderRadius: 10, border: `1px solid ${C.border}`, overflow: "hidden", boxShadow: "0 1px 4px rgba(0,0,0,0.05)", marginTop: 12 }}>
-              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12.5 }}>
+            <div style={{ borderRadius: 10, border: `1px solid ${C.border}`, overflowX: "auto", boxShadow: "0 1px 4px rgba(0,0,0,0.05)", marginTop: 12 }}>
+              <table style={{ width: "100%", minWidth: 480, borderCollapse: "collapse", fontSize: 12.5 }}>
                 <thead>
                   <tr style={{ background: C.bg, borderBottom: `2px solid ${C.border}` }}>
                     <th style={{ textAlign: "left", padding: "10px 14px", color: T.faint, fontSize: 9.5, letterSpacing: 1, textTransform: "uppercase", width: "22%" }}>
