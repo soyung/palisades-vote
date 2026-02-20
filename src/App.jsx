@@ -401,6 +401,7 @@ export default function App() {
             { id: "map", label: "District Map" },
             { id: "members", label: "Council Members" },
             { id: "feasibility", label: "$300K Study Status" },
+            { id: "sentiment", label: "Current Sentiment" },
             { id: "analysis", label: "Path to 8 Votes" },
             { id: "rebuilding", label: "Rebuilding Progress" },
             { id: "comparison", label: "CRD vs DRD" },
@@ -650,6 +651,74 @@ export default function App() {
             </div>
             <div style={{ marginTop: 18, background: C.committeeBg, border: `1px solid ${C.committeeBorder}`, borderRadius: 8, padding: "10px 14px", fontSize: 11.5, color: T.sub, lineHeight: 1.6 }}>
               <strong style={{ color: C.committee }}>Bottom line:</strong> Park's office did the work — secured funding, got EWDD's sign-off — but the Council majority wants a citywide TIF fiscal analysis first. That analysis also hasn't been completed. The study remains stuck with no public timeline.
+            </div>
+          </div>
+
+          {/* ── CURRENT SENTIMENT ── */}
+          <div id="sentiment" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 24 }}>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>As of Feb 2026</div>
+            <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 16px" }}>Current Sentiment — 3 Camps</h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              {[
+                {
+                  num: "1",
+                  title: "\"Just do something\" — DRD now",
+                  color: C.yay,
+                  bg: C.yayBg,
+                  border: C.yayBorder,
+                  who: "Traci Park, Westside Regional Alliance of Councils, Resilient Palisades, Palisades residents",
+                  argument: "LA County has already created DRDs for Topanga and Altadena. The Palisades — the hardest-hit area — is the only major burn zone without one. Park secured SCAG funding so there's no budget impact. Every month of delay is a month the recovery proceeds without long-term infrastructure financing. The feasibility study alone doesn't cost the city anything.",
+                  sources: [
+                    { label: "CD11 Recovery Updates", href: "https://cd11.lacity.gov/palisades-recovery-updates" },
+                    { label: "Daily News Dec 9", href: "https://www.dailynews.com/2025/12/09/l-a-city-council-splits-on-study-for-palisades-climate-resilience-district/" },
+                  ],
+                },
+                {
+                  num: "2",
+                  title: "\"CRD is the better tool\" — think bigger",
+                  color: "#047857",
+                  bg: "#f0fdf4",
+                  border: "#bbf7d0",
+                  who: "Some policy advocates, opinion writers (Times of San Diego, Jan 2026)",
+                  argument: "DRD revenue is restricted to disaster recovery and expires. A CRD is a permanent local government entity that can levy taxes, sell bonds, and coordinate across jurisdictions. Palisades, Topanga, and Malibu being split into 3 separate districts is inefficient — a single larger CRD spanning city and county lines would have more financing capacity and more political leverage. The DRD/CRD overlap constraint also means choosing wrong now locks you out later.",
+                  sources: [
+                    { label: "Times of San Diego — Opinion, Dec 26 2025", href: "https://timesofsandiego.com/opinion/2025/12/26/californias-fire-victims-can-take-control-climate-resilience-district/" },
+                    { label: "Democracy Local — Jan 2 2026", href: "https://democracylocal.substack.com/p/column-how-victims-of-climate-disaster" },
+                  ],
+                },
+                {
+                  num: "3",
+                  title: "\"Analysis first\" — no shortcuts",
+                  color: C.committee,
+                  bg: C.committeeBg,
+                  border: C.committeeBorder,
+                  who: "Yaroslavsky (D5), Harris-Dawson (D8), majority of Council",
+                  argument: "TIF districts divert future property tax increment away from the general fund for decades. LA is already facing a $1B+ deficit. The city has no completed analysis of what a DRD or CRD would cost the general fund citywide. Approving a Palisades study without that analysis sets a precedent — every district will want one. Let the Budget & Finance and Economic Development committees do their work first.",
+                  sources: [
+                    { label: "Mar Vista Voice — Dec 12 2025", href: "https://marvistavoice.org/city-council-pumps-the-brakes-on-palisades-climate-resilience-district-study/" },
+                    { label: "Daily News — Yaroslavsky quotes", href: "https://www.dailynews.com/2025/12/09/l-a-city-council-splits-on-study-for-palisades-climate-resilience-district/" },
+                  ],
+                },
+              ].map(camp => (
+                <div key={camp.num} style={{ background: camp.bg, border: `1px solid ${camp.border}`, borderLeft: `4px solid ${camp.color}`, borderRadius: 10, padding: "14px 16px" }}>
+                  <div style={{ display: "flex", gap: 10, alignItems: "flex-start", marginBottom: 8 }}>
+                    <div style={{ width: 22, height: 22, borderRadius: "50%", background: camp.color, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 1 }}>
+                      <span style={{ fontSize: 11, fontWeight: 700, color: "white" }}>{camp.num}</span>
+                    </div>
+                    <div style={{ fontSize: 14, fontWeight: 700, color: T.heading }}>{camp.title}</div>
+                  </div>
+                  <div style={{ fontSize: 11, color: camp.color, fontWeight: 600, marginBottom: 6, paddingLeft: 32 }}>{camp.who}</div>
+                  <div style={{ fontSize: 12, color: T.body, lineHeight: 1.7, marginBottom: 10, paddingLeft: 32 }}>{camp.argument}</div>
+                  <div style={{ display: "flex", gap: 8, flexWrap: "wrap", paddingLeft: 32 }}>
+                    {camp.sources.map(s => (
+                      <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer"
+                        style={{ fontSize: 10.5, color: camp.color, textDecoration: "none", background: "white", border: `1px solid ${camp.border}`, borderRadius: 4, padding: "2px 8px" }}>
+                        {s.label} ↗
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
