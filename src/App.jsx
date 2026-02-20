@@ -773,7 +773,7 @@ export default function App() {
             </div>
 
             <div style={{ marginTop: 14, background: C.yayBg, border: `1px solid ${C.yayBorder}`, borderRadius: 8, padding: "10px 14px", fontSize: 11.5, color: "#15803d", lineHeight: 1.6 }}>
-              <strong>Bottom line:</strong> Given the Governor's declaration is already in place and speed matters for Palisades recovery, <strong>DRD is the faster and more politically viable path</strong> right now. A CRD could follow later for broader citywide climate resilience, using the DRD as a proof of concept.
+              <strong>Bottom line:</strong> Given the Governor's declaration is already in place and speed matters for Palisades recovery, <strong>DRD is the faster and more politically viable path</strong> right now. A CRD is not simply a "later addition" — both districts cannot capture the same property tax increment at the same time over the same boundary. In practice, the city would need to choose one or sequence them carefully: dissolve or wind down the DRD before a CRD could claim the same increment, or define non-overlapping boundaries and revenue streams.
             </div>
           </div>
 
