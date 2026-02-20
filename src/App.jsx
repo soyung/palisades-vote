@@ -876,6 +876,24 @@ export default function App() {
                   accent: C.committee,
                 },
                 {
+                  href: "https://timesofsandiego.com/opinion/2025/12/26/californias-fire-victims-can-take-control-climate-resilience-district/",
+                  title: "California's fire victims can take control with a climate resilience district",
+                  sub: "Times of San Diego · Opinion · Dec 26, 2025 · Case for CRD as permanent governance, not just financing",
+                  accent: "#047857",
+                },
+                {
+                  href: "https://democracylocal.substack.com/p/column-how-victims-of-climate-disaster",
+                  title: "How Survivors of Climate Disaster Can Form Their Own Governments",
+                  sub: "Democracy Local · Jan 2, 2026 · Argues for larger cross-jurisdictional CRD spanning Palisades, Topanga, Malibu",
+                  accent: "#047857",
+                },
+                {
+                  href: "https://marvistavoice.org/city-council-pumps-the-brakes-on-palisades-climate-resilience-district-study/",
+                  title: "City Council Pumps the Brakes on Palisades Climate Resilience District Study",
+                  sub: "Mar Vista Voice · Dec 12, 2025 · Yaroslavsky's fiscal objections in detail",
+                  accent: C.committee,
+                },
+                {
                   href: "https://palisades-tif-districts.vercel.app/",
                   title: "California TIF Districts: RDA → IFD → EIFD → CRD → DRD",
                   sub: "Reference app · Detailed breakdown of all California TIF district types, formation process, eligible spending, and CRD vs DRD comparison",
