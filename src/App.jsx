@@ -36,8 +36,8 @@ const MEMBERS = [
     lean: "lean-yay",
     leanLabel: "Lean YAY",
     reason: "Progressive climate advocate — among the strongest voices on environmental justice on the council. Voted YES on the Dec 9 referral motion, but this does not indicate DRD opposition — she may have deferred to senior colleagues or wanted more process. Strong environmental justice orientation. Her district (Lincoln Heights, Koreatown, Echo Park) has no direct wildfire stake but stands to benefit from citywide insurance stabilization and any construction employment multiplier.",
-    concern: "No public statement on DRD position. Equity framing critical — the argument must speak to her constituents, not Palisades homeowners.",
-    x: 310, y: 165,
+    concern: "Voted YES on Oct 7 B&F committee motion to shelve (Receive and File) the June 2025 EWDD report — one of five unanimous committee votes. No separate public statement on DRD. Equity framing critical — the argument must speak to her constituents, not Palisades homeowners.",
+    x: 288, y: 178,
   },
   {
     id: "d2", district: 2, name: "Adrin Nazarian",
@@ -46,8 +46,8 @@ const MEMBERS = [
     voteLabel: "✓ NO on Referral — Voted to Proceed",
     lean: "proceed",
     leanLabel: "Voted to Proceed",
-    reason: "Chairs the Environment & Energy Committee — institutionally aligned with climate tools. Former State Assembly member who understands TIF mechanics. Voted NO on the Dec 9 referral motion (i.e., wanted to proceed without committee delay). Of the 5 who opposed referral, his institutional role makes his support the most substantive — he has direct committee jurisdiction over climate financing tools.",
-    concern: "None on record.",
+    reason: "Co-sponsored the original Park–Nazarian–Price CRD motion on January 15, 2025 — he was in from day one. Chairs the Environment & Energy Committee, giving him direct institutional jurisdiction over climate financing tools. Former State Assembly member who understands TIF mechanics. Voted NO on the Dec 9 referral, meaning he wanted to proceed without committee delay. Of the 5 who voted to proceed, his combination of co-sponsorship, committee role, and institutional knowledge makes his support the most substantive.",
+    concern: "None on record. One of the clearest likely DRD supporters based on co-sponsorship and vote record.",
     x: 290, y: 95,
   },
   {
@@ -79,8 +79,8 @@ const MEMBERS = [
     voteLabel: "YES on Referral — Position on DRD Unknown",
     lean: "lean-nay",
     leanLabel: "Lean NAY",
-    reason: "Budget & Finance Committee Chair and co-author of the Dec 9 referral motion (with Blumenfield). Of all 15 members, she is the one whose DRD position is most clearly on the record — she has publicly and explicitly raised fiscal objections, warning that TIF districts lock up property tax increment from the general fund for decades at a time when LA faces a $1B deficit. Her objection is fiscal, not ideological. The Crisis Memo — showing the cost of inaction — is specifically designed for her.",
-    concern: "Publicly stated: city $1B deficit, TIF diverts general fund revenue for decades, no citywide TIF fiscal analysis yet completed.",
+    reason: "Budget & Finance Committee Chair. Her trajectory is the most documented of any member: voted YES in Feb 2025 to commission the CRD study (B&F 5-0), voted YES in Oct 2025 to shelve the EWDD report after seeing the fiscal analysis, and co-authored the Dec 9 referral motion with Blumenfield. Her shift from supporter to skeptic tracks directly with the EWDD June 2025 report's fiscal findings — particularly the risk that early CRD formation could reduce general fund revenue below pre-fire levels. Her objection is fiscal and substantiated, not merely political. Of all 15 members, her DRD position is most clearly on the record.",
+    concern: "Publicly stated: city $1B deficit, TIF diverts general fund revenue for decades, no citywide TIF fiscal analysis yet completed. The EWDD June 2025 report itself acknowledged this risk.",
     x: 205, y: 170,
   },
   {
@@ -123,8 +123,8 @@ const MEMBERS = [
     voteLabel: "✓ NO on Referral — Voted to Proceed",
     lean: "proceed",
     leanLabel: "Voted to Proceed",
-    reason: "Voted NO on the Dec 9 referral — i.e., wanted to proceed without committee delay — despite representing a South LA district (South Central, Watts, Exposition Park) with no direct wildfire stake. His vote to proceed is notable and unexplained publicly; possible motivations include support for the tool's citywide climate application or inter-council dynamics. Of the 5 who voted to proceed, his district geography makes his vote the most symbolically significant for the equity argument.",
-    concern: "None on record.",
+    reason: "Co-sponsored the original Park–Nazarian–Price CRD motion on January 15, 2025, despite representing a South LA district (South Central, Watts, Exposition Park) with no direct wildfire stake. His co-sponsorship from the start — and subsequent NO vote on the Dec 9 referral — is the most symbolically significant data point for the equity argument: a South LA representative was on board before anyone made the citywide case formally. His motivation has not been publicly explained but likely reflects either support for the tool's broader climate application or inter-council relationships.",
+    concern: "None on record. Co-sponsorship + proceed vote makes him one of the clearest likely DRD supporters.",
     x: 270, y: 238,
   },
   {
@@ -403,6 +403,7 @@ export default function App() {
             { id: "members", label: "- Council Members", indent: true },
             { id: "feasibility", label: "- $300K Study Status", indent: true },
             { id: "sentiment", label: "2. Current Status", indent: false },
+            { id: "resident-sentiment", label: "- Resident Voices", indent: true },
             { id: "comparison", label: "3. CRD vs DRD", indent: false },
             { id: "strategy", label: "4. Strategy", indent: false },
             { id: "analysis", label: "- Path to 8 Votes", indent: true },
@@ -469,15 +470,18 @@ export default function App() {
             <h1 style={{ fontSize: 28, fontWeight: 700, color: T.heading, margin: "0 0 10px", lineHeight: 1.25 }}>
               Palisades Disaster Recovery District
             </h1>
-            <p style={{ fontSize: 14, color: T.sub, margin: "0 0 10px", lineHeight: 1.7, maxWidth: 620 }}>
-              Traci Park (CD11) introduced a motion on <strong>January 15, 2025</strong> (<a href="https://cityclerk.lacity.org/lacityclerkconnect/index.cfm?fa=ccfi.viewrecord&amp;cfnumber=25-0006-S38" target="_blank" rel="noopener noreferrer" style={{ color: C.palisades, textDecoration: "underline" }}>CF 25-0006-S38 ↗</a>) — the week of the fire — asking the city's Economic &amp; Workforce Development Department (EWDD) to study the feasibility of forming a <strong>Climate Resilience District (CRD)</strong> for the Palisades burn area.
+            <p style={{ fontSize: 13.5, color: T.sub, margin: 0, lineHeight: 1.75, maxWidth: 660 }}>
+              Traci Park (CD11) — joined by Nazarian (D2) and Price (D9) — introduced <a href="https://cityclerk.lacity.org/lacityclerkconnect/index.cfm?fa=ccfi.viewrecord&amp;cfnumber=25-0006-S38" target="_blank" rel="noopener noreferrer" style={{ color: C.palisades, textDecoration: "underline" }}>CF 25-0006-S38</a> on January 15, 2025, the week of the fire.
+              On December 9, 2025, the full council held a key procedural vote on the matter — see below.
+              The Park–Lee substitute motion directing the city to pursue a <strong>Disaster Recovery District (DRD)</strong> subsequently passed the Economic Development and Jobs Committee on February 17, 2026.
+              It still requires <strong>Budget &amp; Finance Committee action</strong> and a <strong>Full Council vote of 8 out of 15</strong> to advance.
             </p>
-            <p style={{ fontSize: 14, color: T.sub, margin: "0 0 10px", lineHeight: 1.7, maxWidth: 620 }}>
-              By December 9, EWDD had completed a study recommending a $300K boundary and feasibility analysis. Park pivoted on the floor to a <strong>substitute motion for a Disaster Recovery District (DRD) under SB 782</strong> — a faster, fire-specific tool — and proposed funding it from the Economic Development Trust Fund. She had also separately secured SCAG funding so the study would have no general fund impact.
-            </p>
-            <p style={{ fontSize: 14, color: T.sub, margin: 0, lineHeight: 1.7, maxWidth: 620 }}>
-              On December 9, the council voted <strong>10–5</strong> on a procedural motion by Yaroslavsky and Blumenfield to refer the entire matter — including Park's substitute DRD motion — to the Budget &amp; Finance and Economic Development committees. <strong>This was not a vote on the DRD itself.</strong> The 10 who voted YES were voting to send it to committee; their actual positions on the DRD are largely unknown. Only the 5 who voted NO — opposing the referral — can be identified as likely DRD supporters. Budget &amp; Finance Chair Yaroslavsky has publicly raised fiscal concerns, but the other 9 YES votes have not stated public positions. <strong>8 of 15 council votes are needed for the study to pass.</strong>
-            </p>
+          </div>
+
+          {/* CONTEXT BOX */}
+          <div style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: 10, padding: "13px 18px", marginBottom: 20, fontSize: 12, color: T.sub, lineHeight: 1.75 }}>
+            <span style={{ fontWeight: 700, color: T.heading }}>What was the December 9 vote? </span>
+            The June 2025 EWDD report on CRD feasibility had already been shelved by Budget &amp; Finance in October. On December 9, Park introduced a new substitute motion on the floor — the Park–Lee motion — pivoting from a CRD to a Disaster Recovery District (DRD) under SB 782, which had passed in September 2025. Yaroslavsky and Blumenfield then moved to refer the entire matter — CF 25-0006-S38, including the Park–Lee substitute — to Budget &amp; Finance and the Economic Development and Jobs Committee, rather than allowing a direct council vote. The 10–5 vote below reflects that <em>referral motion</em>. It was a procedural vote on process, not a vote on the DRD itself. The 10 who voted YES were voting to send it to committee; their actual positions on the DRD are largely unknown.
           </div>
 
           {/* VOTE SCOREBOARD */}
@@ -509,7 +513,7 @@ export default function App() {
           <div style={{ marginBottom: 36 }}>
             <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 8 }}>Projected Outcome</div>
             <div style={{ height: 32, borderRadius: 8, overflow: "hidden", display: "flex", border: `1px solid ${C.border}` }}>
-              <div style={{ width: `${(VOTE_COUNTS.yay / 15) * 100}%`, background: C.yay, display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ width: `${(VOTE_COUNTS.proceed / 15) * 100}%`, background: C.yay, display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <span style={{ fontSize: 11, fontWeight: 700, color: "white" }}>{VOTE_COUNTS.proceed} Proceed</span>
               </div>
               <div style={{ width: `${(leanYayOnly / 15) * 100}%`, background: "#65a30d", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -629,24 +633,76 @@ export default function App() {
 
           {/* ── $300K FEASIBILITY STUDY STATUS ── */}
           <div id="feasibility" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 24 }}>
-            <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>Current Status</div>
-            <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 16px" }}>The $300K Feasibility Study — Where Things Stand</h2>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>CF 25-0006-S38 · Full Timeline</div>
+            <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 16px" }}>From Motion to Committee — January 2025 to Present</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
               {[
-                { date: "Jan 15, 2025", label: "Motion introduced", cfLink: "https://cityclerk.lacity.org/lacityclerkconnect/index.cfm?fa=ccfi.viewrecord&cfnumber=25-0006-S38", detail: "Traci Park introduces motion asking EWDD to study feasibility of a Climate Resilience District for the Palisades burn area — the week the fire broke out.", done: true },
-                { date: "Jun 2025", label: "EWDD report completed", detail: "EWDD concludes the idea deserves further study. Recommends $300K for a full feasibility and boundary analysis. Notes CRDs are slow (18–36 months to form) and not useful for short-term disaster recovery.", done: true },
-                { date: "Mid-2025", label: "Budget & Finance: \"note and file\"", detail: "The $300K request is shelved — money wasn't in the budget. Committee says the city needs a citywide fiscal analysis of TIF district impacts before approving any individual study.", done: true },
-                { date: "Dec 9, 2025", label: "Procedural vote — 10–5 to refer entire matter to committee", detail: "On the floor, Park introduced a substitute motion to pursue a DRD (SB 782) instead of a CRD, funded from the Economic Development Trust Fund with SCAG backup funding (no general fund impact). Yaroslavsky and Blumenfield moved to refer the entire matter — including Park's substitute motion — to Budget & Finance and the Economic Development and Jobs Committee. That referral motion passed 10–5. This was a procedural vote, not a vote on the DRD itself. The 10 YES votes indicate support for committee review, not opposition to the DRD.", done: true },
-                { date: "Now — Feb 2026", label: "Stuck in committee", detail: "Pending in two committees: Budget & Finance (Yaroslavsky chair) and Economic Development. No hearing scheduled. The citywide TIF fiscal impact report Yaroslavsky demanded also hasn't been completed. No public timeline for resolution.", done: false },
+                {
+                  date: "Jan 15, 2025",
+                  label: "Motion introduced — CF 25-0006-S38",
+                  cfLink: "https://cityclerk.lacity.org/lacityclerkconnect/index.cfm?fa=ccfi.viewrecord&cfnumber=25-0006-S38",
+                  detail: "Traci Park introduces motion asking EWDD to study the feasibility of a Climate Resilience District (CRD) for the Palisades burn area — the week of the fire. Referred to Budget & Finance, Economic Development, and Energy & Environment committees.",
+                  status: "done",
+                },
+                {
+                  date: "Feb–Mar 2025",
+                  label: "Ad Hoc Committee + Budget & Finance approve → Full Council adopts",
+                  detail: "Ad Hoc Committee for LA Recovery approves (Feb 6). Budget & Finance concurs with amendment on Feb 18 — adding bullet (f) requiring analysis of financing mechanisms and fiscal impact to the city's bottom line. B&F vote unanimous 5-0: Yaroslavsky, Blumenfield, Hutt, McOsker, Hernandez all YES. Full Council adopts on March 19 — motion presented by Yaroslavsky, seconded by Park. Original motion was co-sponsored by Park, Nazarian (D2), and Price (D9). At this stage, Yaroslavsky is working with Park, not against her.",
+                  status: "done",
+                },
+                {
+                  date: "Jun 16, 2025",
+                  label: "EWDD issues report on CRD feasibility",
+                  detail: "EWDD submits report concluding the Palisades area warrants further analysis. Report recommends engaging an outside consultant to conduct a boundary and feasibility study at an estimated cost of $300,000. Notes CRDs take 18–36 months to form and may not serve immediate recovery needs.",
+                  status: "done",
+                },
+                {
+                  date: "Oct 7, 2025",
+                  label: "Budget & Finance: received and filed",
+                  detail: "Budget & Finance Committee moves to Receive and File the EWDD June 16 report — effectively shelving it without approving funding. Vote unanimous 5-0: Yaroslavsky YES, Blumenfield YES, Hutt YES, McOsker YES, Hernandez YES. Notable: Hernandez (D1), currently assessed as a likely DRD supporter, voted to shelve at committee level. Yaroslavsky's stated position: a citywide fiscal analysis of TIF district impacts is needed before approving any individual district study. This is the same Yaroslavsky who voted YES to commission the study in February 2025 — the EWDD report's fiscal findings shifted her position.",
+                  status: "done",
+                },
+                {
+                  date: "Sep 2025",
+                  label: "SB 782 signed into law — DRD tool created",
+                  detail: "California Legislature enacts SB 782 (Pérez), creating Disaster Recovery Districts as an emergency TIF tool for declared disaster areas. DRDs have a streamlined formation process compared to CRDs — no protest threshold, expedited timeline, directly tied to disaster declarations. This new tool is what enables Park to pivot from CRD to DRD on December 9. Without SB 782, the only option was still the slower CRD process that EWDD had already flagged as too slow for short-term recovery.",
+                  status: "done",
+                },
+                {
+                  date: "Dec 9, 2025",
+                  label: "Procedural referral vote — 10–5",
+                  detail: "The June EWDD report having been shelved, Park introduces a substitute motion (Park–Lee) on the floor to pursue a DRD under SB 782 — the new disaster recovery tool enacted in September. The motion authorizes $300K from the Economic Development Trust Fund (not general fund) to pay Kosmont Companies, which had already been retained under the Mayor's Emergency Declaration. Yaroslavsky and Blumenfield move to refer the entire matter — including the Park–Lee substitute — to Budget & Finance and Economic Development and Jobs Committee. That referral motion passes 10–5. Procedural vote only — not a vote on the DRD itself.",
+                  status: "done",
+                },
+                {
+                  date: "Jan 27, 2026",
+                  label: "EWDD requests authorization to fund $300K DRD feasibility study",
+                  detail: "EWDD submits formal transmittal requesting Council authorization to transfer $300,000 from the Economic Development Trust Fund (not general fund) to fund a comprehensive DRD feasibility study. Kosmont Companies had already been retained under the Mayor's Emergency Declaration and — through a separate SCAG contract ($75K covering both Palisades and Eaton DRDs) — completed preliminary feasibility work. The $300K breaks down as: $220K to expand Kosmont's existing analysis into a full feasibility study, and $80K for boundary mapping required by the State Board of Equalization. Key preliminary finding from Kosmont: pre-fire assessed value ~$21.3B, post-fire ~$16.3B (loss of ~$5B across 5,581 damaged/destroyed structures). Projected DRD revenue: $325M–$1.9B over term depending on duration, County participation, and TIF allocation.",
+                  status: "done",
+                },
+                {
+                  date: "Feb 17, 2026",
+                  label: "Economic Development and Jobs Committee approves",
+                  detail: "Committee moves to approve the EWDD Jan 27 report — including authorization to transfer $300K from the Economic Development Trust Fund to fund the Kosmont feasibility study — and approves the Park–Lee substitute motion directing the city to pursue a DRD. The June 16, 2025 EWDD report is noted and filed. This is the first substantive committee-level approval of the DRD direction.",
+                  status: "done",
+                },
+                {
+                  date: "Now — Feb 2026",
+                  label: "Budget & Finance Committee: no action yet",
+                  detail: "Economic Development and Jobs Committee has approved both the EWDD report and the Park–Lee DRD substitute motion. Budget & Finance Committee — chaired by Yaroslavsky — has not yet scheduled action. Once both committees act, a Full Council vote of 8 out of 15 is needed to authorize EWDD to proceed with the Kosmont feasibility study. Note: Council approval at this stage authorizes only the study — any decision to actually form a DRD requires subsequent Council and Mayor action.",
+                  status: "pending",
+                },
               ].map((step, i, arr) => (
                 <div key={step.date} style={{ display: "flex", gap: 14, paddingBottom: i < arr.length - 1 ? 18 : 0 }}>
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flexShrink: 0 }}>
-                    <div style={{ width: 10, height: 10, borderRadius: "50%", marginTop: 4, flexShrink: 0, background: step.done ? C.yay : C.committee }} />
+                    <div style={{ width: 10, height: 10, borderRadius: "50%", marginTop: 4, flexShrink: 0,
+                      background: step.status === "done" ? C.yay : step.status === "pending" ? C.committee : "#e5e7eb" }} />
                     {i < arr.length - 1 && <div style={{ width: 2, flex: 1, background: C.border, marginTop: 4 }} />}
                   </div>
                   <div>
                     <div style={{ display: "flex", gap: 8, alignItems: "baseline", flexWrap: "wrap", marginBottom: 3 }}>
-                      <span style={{ fontSize: 10, fontWeight: 700, color: step.done ? C.yay : C.committee, letterSpacing: 0.5 }}>{step.date}</span>
+                      <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: 0.5,
+                        color: step.status === "done" ? C.yay : step.status === "pending" ? C.committee : T.faint }}>{step.date}</span>
                       {step.cfLink
                         ? <a href={step.cfLink} target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, fontWeight: 700, color: T.heading, textDecoration: "underline" }}>{step.label} ↗</a>
                         : <span style={{ fontSize: 12, fontWeight: 700, color: T.heading }}>{step.label}</span>
@@ -657,8 +713,8 @@ export default function App() {
                 </div>
               ))}
             </div>
-            <div style={{ marginTop: 18, background: C.committeeBg, border: `1px solid ${C.committeeBorder}`, borderRadius: 8, padding: "10px 14px", fontSize: 11.5, color: T.sub, lineHeight: 1.6 }}>
-              <strong style={{ color: C.committee }}>Bottom line:</strong> Park's office did the work — secured funding, got EWDD's sign-off — but the Council majority wants a citywide TIF fiscal analysis first. That analysis also hasn't been completed. The study remains stuck with no public timeline.
+            <div style={{ marginTop: 18, background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: 8, padding: "10px 14px", fontSize: 11.5, color: "#1e40af", lineHeight: 1.6 }}>
+              <strong>Current status:</strong> Economic Development and Jobs Committee approved both the EWDD Jan 27 report and the Park–Lee DRD substitute motion on Feb 17, 2026. Budget & Finance Committee action still pending (Yaroslavsky chair). A Full Council vote of 8 out of 15 is then required — but this would authorize only the $300K feasibility study, not DRD formation itself.
             </div>
           </div>
 
@@ -705,7 +761,7 @@ export default function App() {
                   bg: C.committeeBg,
                   border: C.committeeBorder,
                   who: "Yaroslavsky (D5), Harris-Dawson (D8), majority of Council",
-                  argument: "TIF districts divert future property tax increment away from the general fund for decades. LA is already facing a $1B+ deficit. The city has no completed analysis of what a DRD or CRD would cost the general fund citywide. Approving a Palisades study without that analysis sets a precedent — every district will want one. Let the Budget & Finance and Economic Development committees do their work first.",
+                  argument: "TIF districts divert future property tax increment away from the general fund for decades. LA is already facing a $1B+ deficit. Yaroslavsky voted YES in February 2025 to commission the CRD study — her skepticism is not reflexive. It was the EWDD's own June 2025 report that shifted her position: the report explicitly warned that a CRD formed early in recovery could reduce general fund revenue below pre-fire levels (citing the 2017 Tubbs Fire as precedent). The B&F committee shelved the report 5-0 in October, including Hernandez. Yaroslavsky's ask: complete a citywide fiscal analysis of TIF district impacts before approving any individual district.",
                   sources: [
                     { label: "Mar Vista Voice — Dec 12 2025", href: "https://marvistavoice.org/city-council-pumps-the-brakes-on-palisades-climate-resilience-district-study/" },
                     { label: "Daily News — Yaroslavsky quotes", href: "https://www.dailynews.com/2025/12/09/l-a-city-council-splits-on-study-for-palisades-climate-resilience-district/" },
@@ -735,6 +791,68 @@ export default function App() {
           </div>
 
           {/* ANALYSIS */}
+
+          {/* RESIDENT SENTIMENT */}
+          <div id="resident-sentiment" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 24 }}>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>CF 25-0006-S38 · Public Comment · Feb 16–17, 2026</div>
+            <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 6px" }}>Resident Voices</h2>
+            <p style={{ fontSize: 11.5, color: T.sub, margin: "0 0 16px", lineHeight: 1.6 }}>
+              Selected public comments submitted to the Economic Development and Jobs Committee ahead of the Feb 17, 2026 hearing. Note: residents largely use "CRD" and "DRD" interchangeably — the specific instrument is less salient to them than the outcome.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              {[
+                {
+                  name: "Kathrin Werner",
+                  date: "Feb 16, 2026",
+                  theme: "Urgency + insurance + displacement",
+                  themeColor: C.yay,
+                  quote: "The Climate Resilience District determines whether Pacific Palisades can properly rebuild its infrastructure, restore insurability, and bring hope to residents who have lost everything. We do not lack proof that a CRD is feasible — we lack the CRD itself.",
+                  note: "Also flags displacement: 'seniors and lower-income residents are being pushed out while developers move in.' Cites Altadena comparison directly: 'Altadena already has an authority and a coordinated recovery path.'",
+                },
+                {
+                  name: "Kari Weaver",
+                  date: "Feb 17, 2026",
+                  theme: "Property tax recovery argument",
+                  themeColor: "#1d4ed8",
+                  quote: "The faster we can rebuild, the sooner the property owners of the Palisades will pay property taxes not only on the land, but the dwelling. We need a CRD in the Palisades in order to help us with our rebuild. Please vote yes on the feasibility study.",
+                  note: "Resident making the same fiscal argument as Module 1 — naturally. Not a policy advocate, just a homeowner.",
+                },
+                {
+                  name: "Patrice Dobrowitsky",
+                  date: "Feb 16, 2026",
+                  theme: "Frustration — city governance failures",
+                  themeColor: C.committee,
+                  quote: "You, our leadership, have to stop stalling and get on this. Houses are going up, we don't know who is rebuilding safely. We need rules and we should definitely be a Climate Resilience District.",
+                  note: "Broader frustration with LAHSA, DWP, fire chief, City Attorney sitting on AECOM report. CRD/DRD framed as one piece of a general accountability failure.",
+                },
+                {
+                  name: "Paul Nagle",
+                  date: "Feb 17, 2026",
+                  theme: "Support — but wants credible, objective process",
+                  themeColor: "#7c3aed",
+                  quote: "There is tremendous promise in the creation of a CRD, but the entire community should understand the facts of such a measure. I urge the committee to commission a time-efficient, objective and highly credible study.",
+                  note: "Nuanced: supportive but wary of ideological capture. 'These should not be guided by ideological motives, but from a sincere desire to determine how a CRD can make a meaningful contribution.' Closest resident voice to Yaroslavsky's 'analysis first' position — but ultimately pro-study.",
+                },
+              ].map(c => (
+                <div key={c.name} style={{ background: C.bg, border: `1px solid ${C.border}`, borderLeft: `3px solid ${c.themeColor}`, borderRadius: 8, padding: "12px 16px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 6, flexWrap: "wrap", gap: 6 }}>
+                    <div style={{ display: "flex", gap: 10, alignItems: "baseline", flexWrap: "wrap" }}>
+                      <span style={{ fontSize: 12.5, fontWeight: 700, color: T.heading }}>{c.name}</span>
+                      <span style={{ fontSize: 10, color: T.faint }}>{c.date}</span>
+                    </div>
+                    <span style={{ fontSize: 9.5, fontWeight: 600, color: c.themeColor, background: "white", border: `1px solid ${c.themeColor}30`, borderRadius: 4, padding: "2px 7px" }}>{c.theme}</span>
+                  </div>
+                  <div style={{ fontSize: 12, color: T.body, lineHeight: 1.7, fontStyle: "italic", marginBottom: 8, borderLeft: "2px solid #e5e7eb", paddingLeft: 10 }}>
+                    "{c.quote}"
+                  </div>
+                  <div style={{ fontSize: 11, color: T.sub, lineHeight: 1.6 }}>{c.note}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{ marginTop: 14, fontSize: 11, color: T.faint, lineHeight: 1.6, fontStyle: "italic" }}>
+              Patterns: All four are pro-study. Three use "CRD" not "DRD." Kathrin Werner and Kari Weaver independently make the property tax / insurability argument — the same logic as Module 1 and Module 3. Altadena comparison raised organically.
+            </div>
+          </div>
 
           <div id="rebuilding" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 24 }}>
             <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>Recovery Snapshot</div>
@@ -828,6 +946,17 @@ export default function App() {
           {/* ── STRATEGY ── */}
           <div id="strategy" style={{ marginBottom: 36 }}>
             <div style={{ fontSize: 9, letterSpacing: 2, color: "#6b7280", textTransform: "uppercase", marginBottom: 12 }}>4. Strategy — Reaching 8 out of 15 Votes</div>
+
+            {/* PLACEHOLDER BANNER */}
+            <div style={{ background: "#fef9c3", border: "2px dashed #ca8a04", borderRadius: 10, padding: "12px 18px", marginBottom: 20, display: "flex", alignItems: "flex-start", gap: 10 }}>
+              <span style={{ fontSize: 18, flexShrink: 0 }}>⚠️</span>
+              <div>
+                <div style={{ fontSize: 12, fontWeight: 700, color: "#92400e", marginBottom: 3 }}>PLACEHOLDER — Draft Only</div>
+                <div style={{ fontSize: 11.5, color: "#78350f", lineHeight: 1.6 }}>
+                  The strategy outlined in this section has not yet been discussed or validated with the project group. All content — levers, analysis modules, framing, and target members — is draft analysis and should not be treated as agreed-upon approach. Provided here for discussion purposes only.
+                </div>
+              </div>
+            </div>
 
             {/* STRATEGY OVERVIEW */}
             <div style={{ background: "white", border: `1px solid ${C.border}`, borderLeft: "4px solid #1e3a8a", borderRadius: 10, padding: "18px 22px", marginBottom: 24 }}>
@@ -1048,15 +1177,16 @@ export default function App() {
                 title: "Palisades as a Fiscal Pillar of LA's General Fund",
                 framing: "\"The DRD doesn't divert tax increment. A failed recovery destroys it.\"",
                 framingFor: "→ Framing for Yaroslavsky (D5)",
-                argument: `Yaroslavsky's stated concern is that TIF diverts property tax increment from the general fund. This module shows the other side: if recovery stalls, the tax base the city is supposedly protecting erodes anyway — possibly more severely than any TIF diversion would cause. Palisades zip codes (90272, 90402) represent among the highest assessed-value real estate in LA City. Post-fire, that base is at risk.`,
+                argument: `Yaroslavsky's stated concern is that TIF diverts property tax increment from the general fund. Two key facts undercut that framing. First, the $300K study is funded from the Economic Development Trust Fund — not the general fund — so approval has zero direct general fund impact. Second, if recovery stalls, the tax base Yaroslavsky is "protecting" erodes anyway. Kosmont's preliminary analysis (via SCAG contract) already quantifies this: pre-fire assessed value was ~$21.3B; post-fire it fell to ~$16.3B — a ~$5B loss across 5,581 damaged or destroyed structures. A DRD could generate $325M–$1.9B in revenue over its term depending on duration and participation. The module builds the long-run scenario: what does that $5B assessed value loss cost the general fund over 10 years if recovery is slow?`,
                 analysis: [
-                  "Baseline: Current assessed value + annual property tax contribution from Palisades zip codes to LA City and County general funds",
-                  "Scenario A (No DRD): Model 30%, 50%, and 70% non-rebuild rates. Project assessed value loss and corresponding general fund revenue loss over 10 years.",
-                  "Scenario B (DRD): Model accelerated rebuild timeline with infrastructure hardening. Project recovered assessed value trajectory.",
-                  "Delta: Net fiscal difference between scenarios — this is the quantified \"cost of inaction.\"",
+                  "Baseline: Pre-fire assessed value (~$21.3B per Kosmont/SCAG) vs. post-fire (~$16.3B). Annual property tax contribution to LA City general fund from Palisades zip codes (90272, 90402).",
+                  "Scenario A (No DRD): Model slow rebuild at 30%, 50%, 70% non-rebuild rates. Project assessed value recovery trajectory and corresponding general fund revenue loss over 10 years.",
+                  "Scenario B (DRD): Model accelerated rebuild with infrastructure hardening. Use Kosmont's $325M–$1.9B revenue range as reference point for DRD financing capacity.",
+                  "Delta: Net fiscal difference between scenarios — the quantified cost of inaction. Compare to TIF diversion amount to show which is larger.",
                 ],
-                note: "A scenario-based spreadsheet with documented assumptions is sufficient — more legible to a policy audience than a full econometric model. Comparable: Camp Fire (Paradise, CA) — Butte County Assessor data on assessed value loss 2018–2023 shows what happens when recovery is slow.",
+                note: "Kosmont's preliminary numbers ($21.3B pre-fire, $16.3B post-fire, $325M–$1.9B DRD revenue range) give you the starting point — the module extends and contextualizes them for a general fund argument. A scenario-based spreadsheet with documented assumptions is sufficient. Camp Fire (Paradise, CA) Butte County Assessor data is still the best slow-recovery comparable.",
                 sources: [
+                  { text: "EWDD Jan 27, 2026 Report — CF 25-0006-S38 (Kosmont preliminary numbers)", href: "https://cityclerk.lacity.org/lacityclerkconnect/index.cfm?fa=ccfi.viewrecord&cfnumber=25-0006-S38" },
                   { text: "LA County Assessor — parcel-level assessed values", href: "https://assessor.lacounty.gov" },
                   { text: "LA County Auditor-Controller — property tax apportionment by city", href: "https://auditorcontroller.lacounty.gov" },
                   { text: "CA Board of Equalization — annual property tax report", href: "https://www.boe.ca.gov/annual/index.html" },
@@ -1471,7 +1601,7 @@ export default function App() {
           <div style={{ borderTop: `1px solid ${C.border}`, paddingTop: 20, fontSize: 11, color: T.faint, lineHeight: 1.7 }}>
             <div style={{ marginBottom: 6, color: T.sub, fontWeight: 600 }}>Last updated: February 20, 2026</div>
             <div style={{ background: "#fffbeb", border: `1px solid ${C.committeeBorder}`, borderRadius: 8, padding: "10px 14px", fontSize: 11, color: T.sub }}>
-              <strong>Disclaimer:</strong> The December 9, 2025 council vote was a procedural vote on a Yaroslavsky-Blumenfield motion to refer the entire matter to committee — it was <em>not</em> a vote on the DRD itself. The 10 YES votes indicate support for committee referral only; individual DRD positions for most of those members are unknown. The 5 NO votes (Park, Nazarian, Price Jr., Hutt, Lee) opposed the referral and can reasonably be identified as DRD supporters. Lean assessments are analytical judgments based on public statements and district interests — they are not official positions. Verify all details before relying on this for planning or advocacy.
+              <strong>Disclaimer:</strong> This tracker is an independent analytical tool, not an official document. Vote interpretations, lean assessments, and strategic analysis reflect the author's judgment based on public records and statements — not official positions of any council member, organization, or institution. Based on public records through February 2026. Individual DRD positions for most members remain unconfirmed; the Dec 9 vote was procedural and does not indicate support or opposition to the DRD itself.
             </div>
           </div>
         </div>
