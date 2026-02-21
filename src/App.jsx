@@ -449,7 +449,7 @@ export default function App() {
                 <div style={{ width: 18, height: 18, borderRadius: "50%", background: col, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                   <span style={{ fontSize: 8.5, fontWeight: 700, color: "white" }}>{m.district}</span>
                 </div>
-                <span style={{ fontSize: 11, color: selected === m.id ? C.palisades : T.sub, fontWeight: selected === m.id ? 600 : 400 }}>{m.name.split(" ").slice(-1)[0]}</span>
+                <span style={{ fontSize: 11, color: selected === m.id ? C.palisades : T.sub, fontWeight: selected === m.id ? 600 : 400 }}>{m.name.endsWith("Jr.") ? m.name.split(" ").slice(-2).join(" ") : m.name.split(" ").slice(-1)[0]}</span>
               </button>
             );
           })}
