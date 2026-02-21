@@ -31,184 +31,184 @@ const MEMBERS = [
   {
     id: "d1", district: 1, name: "Eunisses Hernandez",
     neighborhoods: "Lincoln Heights · Boyle Heights · Echo Park · Koreatown",
-    vote: "committee",
-    voteLabel: "→ Sent to Committee",
+    vote: "refer",
+    voteLabel: "YES on Referral — Position on DRD Unknown",
     lean: "lean-yay",
     leanLabel: "Lean YAY",
-    reason: "Progressive climate advocate — among the strongest voices on environmental justice in the council. Distant from Palisades but supportive of climate resilience tools in principle. Likely to come around if general fund concerns are addressed.",
-    concern: "City budget deficit; wants equity lens on who benefits.",
+    reason: "Progressive climate advocate — among the strongest voices on environmental justice on the council. Voted YES on the Dec 9 referral motion, but this does not indicate DRD opposition — she may have deferred to senior colleagues or wanted more process. Strong environmental justice orientation. Her district (Lincoln Heights, Koreatown, Echo Park) has no direct wildfire stake but stands to benefit from citywide insurance stabilization and any construction employment multiplier.",
+    concern: "No public statement on DRD position. Equity framing critical — the argument must speak to her constituents, not Palisades homeowners.",
     x: 310, y: 165,
   },
   {
     id: "d2", district: 2, name: "Adrin Nazarian",
     neighborhoods: "North Hollywood · Studio City · Van Nuys · Valley Village · Toluca Lake",
-    vote: "yay",
-    voteLabel: "✓ YAY — For Study",
-    lean: "yay",
-    leanLabel: "YAY (on record)",
-    reason: "Chairs the Environment & Energy Committee — institutionally aligned with climate tools. Former State Assembly member who understands TIF mechanics. Voted with Park on the Dec 9 study motion.",
-    concern: "None on record for this vote.",
+    vote: "proceed",
+    voteLabel: "✓ NO on Referral — Voted to Proceed",
+    lean: "proceed",
+    leanLabel: "Voted to Proceed",
+    reason: "Chairs the Environment & Energy Committee — institutionally aligned with climate tools. Former State Assembly member who understands TIF mechanics. Voted NO on the Dec 9 referral motion (i.e., wanted to proceed without committee delay). Of the 5 who opposed referral, his institutional role makes his support the most substantive — he has direct committee jurisdiction over climate financing tools.",
+    concern: "None on record.",
     x: 290, y: 95,
   },
   {
     id: "d3", district: 3, name: "Bob Blumenfield",
     neighborhoods: "Canoga Park · Reseda · Tarzana · Winnetka · Woodland Hills",
-    vote: "committee",
-    voteLabel: "→ Sent to Committee",
+    vote: "refer",
+    voteLabel: "YES on Referral — Position on DRD Unknown",
     lean: "uncertain",
     leanLabel: "Uncertain",
-    reason: "Council President Pro Tempore. West Valley district is fire-adjacent (Woolsey fire history) so he understands the risk. Moderate, pragmatic. Likely deferred to Yaroslavsky's fiscal caution rather than opposing the DRD outright.",
-    concern: "General fund impact; wants full committee process.",
+    reason: "Council President Pro Tempore. Co-sponsored the Yaroslavsky referral motion — his YES vote was a direct procedural act, not merely following the crowd. West Valley district has Woolsey Fire history and real wildfire exposure. Moderate and pragmatic — his co-sponsorship of the referral may reflect genuine process preference or fiscal caution rather than DRD opposition. Public DRD position unknown.",
+    concern: "Co-sponsored the referral motion with Yaroslavsky. No public statement specifically opposing the DRD study.",
     x: 155, y: 110,
   },
   {
     id: "d4", district: 4, name: "Nithya Raman",
     neighborhoods: "Hollywood · Los Feliz · Silver Lake · Sherman Oaks · Studio City",
-    vote: "committee",
-    voteLabel: "→ Sent to Committee",
+    vote: "refer",
+    voteLabel: "YES on Referral — Position on DRD Unknown",
     lean: "lean-yay",
     leanLabel: "Lean YAY",
-    reason: "Now running for Mayor — highest-profile progressive on the council. Strong climate credentials (Asst. President Pro Tem). Entering a mayoral race where wildfire recovery is a defining issue. Her position will likely evolve toward supporting.",
-    concern: "Running for mayor — careful about fiscal optics.",
+    reason: "Now running for Mayor — highest-profile progressive on the council. Strong climate credentials (Asst. President Pro Tem). Voted YES on the Dec 9 referral; DRD position not publicly stated. Entering a mayoral race where wildfire recovery and climate resilience are defining issues. Her evolving mayoral platform may create incentive to support a well-framed DRD.",
+    concern: "No public statement on DRD. Mayoral campaign creates both incentive (climate credentials) and risk (fiscal optics in a deficit year).",
     x: 295, y: 148,
   },
   {
     id: "d5", district: 5, name: "Katy Yaroslavsky",
     neighborhoods: "Bel Air · Beverly Crest · Century City · Cheviot Hills · Beverlywood",
-    vote: "committee",
-    voteLabel: "→ Sent to Committee",
+    vote: "refer",
+    voteLabel: "YES on Referral — Position on DRD Unknown",
     lean: "lean-nay",
     leanLabel: "Lean NAY",
-    reason: "Budget & Finance Committee Chair. The loudest skeptic on Dec 9 — explicitly raised the $1B city deficit and warned TIF diverts property tax from the general fund. Has been 'yelling' about fiscal risk for months. Would need strong budget-neutral safeguards to flip.",
-    concern: "City faces $1B deficit; TIF locks up general fund revenue for decades.",
+    reason: "Budget & Finance Committee Chair and co-author of the Dec 9 referral motion (with Blumenfield). Of all 15 members, she is the one whose DRD position is most clearly on the record — she has publicly and explicitly raised fiscal objections, warning that TIF districts lock up property tax increment from the general fund for decades at a time when LA faces a $1B deficit. Her objection is fiscal, not ideological. The Crisis Memo — showing the cost of inaction — is specifically designed for her.",
+    concern: "Publicly stated: city $1B deficit, TIF diverts general fund revenue for decades, no citywide TIF fiscal analysis yet completed.",
     x: 205, y: 170,
   },
   {
     id: "d6", district: 6, name: "Imelda Padilla",
     neighborhoods: "Van Nuys · Arleta · Lake Balboa · Panorama City · North Hills",
-    vote: "committee",
-    voteLabel: "→ Sent to Committee",
+    vote: "refer",
+    voteLabel: "YES on Referral — Position on DRD Unknown",
     lean: "uncertain",
     leanLabel: "Uncertain",
-    reason: "Central Valley district with no direct wildfire stake in the Palisades recovery. Likely to follow fiscal leadership. However, Van Nuys is fire-adjacent in future risk scenarios — could be persuaded by citywide climate framing.",
-    concern: "Less constituency pressure; budget concerns likely dominate.",
+    reason: "Central Valley district with no direct wildfire stake in Palisades recovery. Voted YES on the Dec 9 referral; no public statement on DRD position. Van Nuys and Panorama City are fire-adjacent in future risk scenarios. With no strong constituency pull in either direction, her vote is likely to track whoever leads the fiscal argument — which is why the analysis matters for this district too.",
+    concern: "No public statement on DRD. No strong constituency pressure either way.",
     x: 255, y: 90,
   },
   {
     id: "d7", district: 7, name: "Monica Rodriguez",
     neighborhoods: "Pacoima · Lake View Terrace · Sunland-Tujunga · Mission Hills · Sylmar",
-    vote: "committee",
-    voteLabel: "→ Sent to Committee",
+    vote: "refer",
+    voteLabel: "YES on Referral — Position on DRD Unknown",
     lean: "lean-yay",
     leanLabel: "Lean YAY",
-    reason: "Represents communities with high wildfire exposure in the northern Valley. Sunland-Tujunga is one of LA's most fire-prone areas. Could be won over by framing the DRD as a citywide disaster preparedness tool, not just a Palisades benefit.",
-    concern: "Wants expanded district coverage; skeptical of Palisades-first framing.",
+    reason: "Represents communities with genuinely high wildfire exposure — Sunland-Tujunga, Sylmar, and Pacoima are among the most fire-prone areas in LA City. Voted YES on the Dec 9 referral; no public statement specifically opposing the DRD. Her district's fire exposure gives her the strongest constituency reason of any 'Voted to Refer' member to support a recovery financing tool. The DRD framed as a citywide wildfire resilience instrument — not a Palisades-exclusive benefit — is the natural pitch for her.",
+    concern: "No public DRD position on record. May be skeptical if framed as a Palisades-only benefit.",
     x: 290, y: 55,
   },
   {
     id: "d8", district: 8, name: "Marqueece Harris-Dawson",
     neighborhoods: "Baldwin Hills · Crenshaw · Leimert Park · Jefferson Park · West Adams",
-    vote: "committee",
-    voteLabel: "→ Sent to Committee",
+    vote: "refer",
+    voteLabel: "YES on Referral — Position on DRD Unknown",
     lean: "lean-nay",
     leanLabel: "Lean NAY",
-    reason: "Council President — institutionally cautious. South LA district has no wildfire stake. Would be skeptical of dedicating general fund property tax to a wealthy westside neighborhood. Equity concerns likely to dominate unless district-neutral framing is used.",
-    concern: "Equity: why should South LA general fund revenue benefit Palisades?",
+    reason: "Council President — institutionally the most cautious vote on the council. South LA district (Baldwin Hills, Crenshaw, Leimert Park) has no direct wildfire stake. Voted YES on Dec 9 referral; no specific DRD statement on record, but his equity concerns are likely based on public role and district context: why should citywide property tax revenue benefit Palisades homeowners? Module 2's employment data (construction jobs in South/East LA) and Module 3's insurance argument (FAIR Plan crisis in South LA too) are the only angles likely to move him.",
+    concern: "No specific DRD statement on record. Equity framing essential — 'Palisades recovery' alone will not move this district.",
     x: 240, y: 215,
   },
   {
     id: "d9", district: 9, name: "Curren D. Price Jr.",
     neighborhoods: "South Central · Watts · Exposition Park · Vermont Square",
-    vote: "yay",
-    voteLabel: "✓ YAY — For Study",
-    lean: "yay",
-    leanLabel: "YAY (on record)",
-    reason: "Voted with Park on Dec 9 despite representing a South LA district with no direct wildfire stake. Likely motivated by the tool's potential application for climate resilience citywide, and possibly inter-council logrolling dynamics.",
-    concern: "None demonstrated on this vote.",
+    vote: "proceed",
+    voteLabel: "✓ NO on Referral — Voted to Proceed",
+    lean: "proceed",
+    leanLabel: "Voted to Proceed",
+    reason: "Voted NO on the Dec 9 referral — i.e., wanted to proceed without committee delay — despite representing a South LA district (South Central, Watts, Exposition Park) with no direct wildfire stake. His vote to proceed is notable and unexplained publicly; possible motivations include support for the tool's citywide climate application or inter-council dynamics. Of the 5 who voted to proceed, his district geography makes his vote the most symbolically significant for the equity argument.",
+    concern: "None on record.",
     x: 270, y: 238,
   },
   {
     id: "d10", district: 10, name: "Heather Hutt",
     neighborhoods: "Mid-City · Koreatown · West Adams · Olympic Park · South Robertson",
-    vote: "yay",
-    voteLabel: "✓ YAY — For Study",
-    lean: "yay",
-    leanLabel: "YAY (on record)",
-    reason: "District borders CD11 (Palisades area) and includes communities exposed to climate and fire risk. Adjacent constituency interest. Voted with Park on Dec 9.",
-    concern: "None demonstrated on this vote.",
+    vote: "proceed",
+    voteLabel: "✓ NO on Referral — Voted to Proceed",
+    lean: "proceed",
+    leanLabel: "Voted to Proceed",
+    reason: "District borders CD11 and includes communities with climate and fire exposure. Voted NO on the Dec 9 referral — likely motivated by geographic adjacency and constituency interest in recovery spillovers. One of the 5 who wanted to proceed without committee delay.",
+    concern: "None on record.",
     x: 225, y: 188,
   },
   {
     id: "d11", district: 11, name: "Traci Park",
     neighborhoods: "Pacific Palisades · Venice · Mar Vista · Del Rey · Playa Vista · LAX area",
-    vote: "yay",
-    voteLabel: "✓ YAY — For Study",
-    lean: "yay",
-    leanLabel: "YAY — Motion Author",
-    reason: "The lead sponsor and most vocal advocate. Represents Pacific Palisades directly. Has chaired the Ad Hoc Committee on LA Recovery since January 2025. Introduced the DRD study motion on Jan 15, the week the fire broke out. Personally invested in this tool as the primary recovery financing mechanism for her district.",
+    vote: "proceed",
+    voteLabel: "✓ NO on Referral — Motion Author",
+    lean: "proceed",
+    leanLabel: "Voted to Proceed",
+    reason: "Motion author and lead advocate. Represents Pacific Palisades directly — has chaired the Ad Hoc Committee on LA Recovery since January 2025. Introduced the original CRD motion on Jan 15 (the week of the fire), then pivoted to a DRD substitute motion on Dec 9 floor. Voted NO on the Yaroslavsky-Blumenfield referral — the only CD11 member, and the member with the most direct constituency stake. She separately secured SCAG funding so the study would have zero general fund impact.",
     concern: "None — she is the champion of this effort.",
     x: 165, y: 185,
   },
   {
     id: "d12", district: 12, name: "John Lee",
     neighborhoods: "Chatsworth · Granada Hills · Porter Ranch · Northridge · Reseda · West Hills",
-    vote: "yay",
-    voteLabel: "✓ YAY — For Study",
-    lean: "yay",
-    leanLabel: "YAY (on record)",
-    reason: "NW Valley district is highly fire-exposed — among the highest risk areas in LA. Chatsworth and Porter Ranch are in fire corridors. Strong constituency reason to support climate resilience financing tools. One of only two non-Westside members to vote with Park.",
-    concern: "None demonstrated — fire risk is a live issue in his district.",
+    vote: "proceed",
+    voteLabel: "✓ NO on Referral — Voted to Proceed",
+    lean: "proceed",
+    leanLabel: "Voted to Proceed",
+    reason: "NW Valley district is highly fire-exposed — Chatsworth, Porter Ranch, and Granada Hills are in active fire corridors. Voted NO on the Dec 9 referral, meaning he wanted to proceed without committee delay. One of only two non-Westside members (along with Price Jr.) among the 5 who voted to proceed. Strong constituency-driven motivation.",
+    concern: "None on record.",
     x: 155, y: 60,
   },
   {
     id: "d13", district: 13, name: "Hugo Soto-Martinez",
     neighborhoods: "Silver Lake · Echo Park · Elysian Valley · Atwater Village · East Hollywood",
-    vote: "committee",
-    voteLabel: "→ Sent to Committee",
+    vote: "refer",
+    voteLabel: "YES on Referral — Position on DRD Unknown",
     lean: "lean-yay",
     leanLabel: "Lean YAY",
-    reason: "The council's most progressive member on housing and climate. Strong climate justice platform. Likely voted to delay for procedural/equity reasons rather than opposition. Would likely support a well-structured DRD with citywide scope.",
-    concern: "Wants affordable housing protections built in; concerned about gentrification accelerating.",
+    reason: "The council's most vocal progressive on housing and climate — authored motions on tenant protections and climate resilience. Voted YES on Dec 9 referral; no public statement opposing the DRD specifically. His vote to refer may reflect procedural caution or equity concerns (gentrification risk in fire recovery zones) rather than opposition. A well-structured DRD with explicit affordable housing and climate equity language would align with his platform.",
+    concern: "No public DRD position on record. Likely concerns: gentrification acceleration in fire recovery, housing affordability, who captures the benefit.",
     x: 318, y: 158,
   },
   {
-    id: "d14", district: 14, name: "Kevin De León",
+    id: "d14", district: 14, name: "Ysabel Jurado",
     neighborhoods: "Downtown · Boyle Heights · Eagle Rock · El Sereno · Highland Park · Garvanza",
-    vote: "committee",
-    voteLabel: "→ Sent to Committee",
-    lean: "uncertain",
-    leanLabel: "Uncertain",
-    reason: "Politically weakened following the 2022 racism scandal; refused to resign and lost significant influence. His vote is hard to predict. Was a prominent climate legislator in Sacramento (authored SB 350, SB 1). May support for legacy reasons but carries less sway with colleagues.",
-    concern: "Politically isolated; unpredictable vote.",
+    vote: "refer",
+    voteLabel: "YES on Referral — Position on DRD Unknown",
+    lean: "lean-yay",
+    leanLabel: "Lean YAY",
+    reason: "Progressive challenger who unseated Kevin De León in November 2024 with ~56% of the vote. Represents one of LA's most working-class and Latino districts. Strong environmental justice orientation — Boyle Heights has long been a frontline community on air quality and climate. Module 2's employment multiplier data (construction jobs concentrated in zip codes like hers) and Module 3's insurance equity argument are both natural fits for her constituency and political brand. First-term member still building her agenda — more likely to be persuaded by a well-framed equity + climate argument than a fiscal one.",
+    concern: "Voted YES on Dec 9 referral — no public DRD position on record. As a first-term member, may have deferred to senior progressive colleagues. No specific DRD objections stated.",
     x: 330, y: 188,
   },
   {
     id: "d15", district: 15, name: "Tim McCosker",
     neighborhoods: "San Pedro · Wilmington · Harbor City · Harbor Gateway · Watts",
-    vote: "committee",
-    voteLabel: "→ Sent to Committee",
+    vote: "refer",
+    voteLabel: "YES on Referral — Position on DRD Unknown",
     lean: "lean-nay",
     leanLabel: "Lean NAY",
-    reason: "Harbor district — geographically, economically and politically far from Pacific Palisades. No wildfire stake. Would be skeptical of diverting citywide property tax revenue. Port and industrial concerns dominate district priorities.",
-    concern: "No constituency interest in Palisades recovery; fiscal concerns.",
+    reason: "Harbor district — geographically, economically, and politically the most distant from Pacific Palisades on the council. San Pedro, Wilmington, and Harbor City have no wildfire stake and no direct connection to the recovery. Voted YES on Dec 9 referral; no public DRD position. Port and industrial concerns dominate the district agenda. Without a compelling constituency argument, his vote is the hardest to move.",
+    concern: "No public DRD position. No constituency pressure either way — the hardest vote to move without a district-specific argument.",
     x: 295, y: 278,
   },
 ];
 
 const VOTE_COUNTS = {
-  yay: MEMBERS.filter(m => m.vote === "yay").length,
-  committee: MEMBERS.filter(m => m.vote === "committee").length,
+  proceed: MEMBERS.filter(m => m.vote === "proceed").length,
+  refer: MEMBERS.filter(m => m.vote === "refer").length,
 };
 
 function VoteBadge({ vote, lean }) {
   const map = {
-    yay: { bg: C.yayBg, border: C.yayBorder, color: C.yay, label: "YAY" },
-    "lean-yay": { bg: C.yayBg, border: C.yayBorder, color: C.yay, label: "Lean YAY" },
-    committee: { bg: C.committeeBg, border: C.committeeBorder, color: C.committee, label: "→ Committee" },
-    uncertain: { bg: "#f3f4f6", border: "#d1d5db", color: T.sub, label: "Uncertain" },
-    "lean-nay": { bg: C.nayBg, border: C.nayBorder, color: C.nay, label: "Lean NAY" },
+    proceed: { bg: C.yayBg, border: C.yayBorder, color: C.yay, label: "Voted to Proceed" },
+    "lean-yay": { bg: "#f0fdf4", border: "#86efac", color: "#15803d", label: "Lean: Support" },
+    refer: { bg: "#f1f5f9", border: "#cbd5e1", color: "#64748b", label: "Voted to Refer" },
+    uncertain: { bg: "#f3f4f6", border: "#d1d5db", color: T.sub, label: "Position Unknown" },
+    "lean-nay": { bg: C.nayBg, border: C.nayBorder, color: C.nay, label: "Lean: Oppose" },
   };
-  const key = vote === "yay" ? "yay" : lean;
+  const key = vote === "proceed" ? "proceed" : lean;
   const s = map[key] || map["uncertain"];
   return (
     <span style={{
@@ -230,14 +230,14 @@ function DistrictMap({ selected, onSelect }) {
   const [hov, setHov] = useState(null);
 
   const getColor = (m) => {
-    if (m.vote === "yay") return C.yay;
+    if (m.vote === "proceed") return C.yay;
     if (m.lean === "lean-yay") return "#65a30d";
     if (m.lean === "lean-nay") return C.nay;
-    return C.committee;
+    return "#94a3b8";
   };
 
   const getBg = (m) => {
-    if (m.vote === "yay") return C.yayBg;
+    if (m.vote === "proceed") return C.yayBg;
     if (m.lean === "lean-yay") return "#f7fee7";
     if (m.lean === "lean-nay") return C.nayBg;
     return C.committeeBg;
@@ -300,11 +300,12 @@ function DistrictMap({ selected, onSelect }) {
 
         {/* Legend */}
         <g transform="translate(16, 256)">
-          <rect x="0" y="0" width="110" height="48" rx="6" fill="white" stroke={C.border} strokeWidth="1" />
+          <rect x="0" y="0" width="118" height="62" rx="6" fill="white" stroke={C.border} strokeWidth="1" />
           {[
-            { col: C.yay, label: "YAY / Lean YAY" },
-            { col: C.committee, label: "Uncertain / → Cmte" },
-            { col: C.nay, label: "Lean NAY" },
+            { col: C.yay, label: "Voted to Proceed" },
+            { col: "#65a30d", label: "Lean: Support DRD" },
+            { col: "#94a3b8", label: "Voted to Refer" },
+            { col: C.nay, label: "Lean: Oppose DRD" },
           ].map((l, i) => (
             <g key={l.label} transform={`translate(8, ${10 + i * 13})`}>
               <circle cx="5" cy="5" r="4" fill={l.col} />
@@ -347,17 +348,17 @@ export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const filtered = MEMBERS.filter(m => {
-    if (filter === "yay") return m.vote === "yay" || m.lean === "lean-yay";
+    if (filter === "yay") return m.vote === "proceed" || m.lean === "lean-yay";
     if (filter === "nay") return m.lean === "lean-nay";
     if (filter === "uncertain") return m.lean === "uncertain";
-    if (filter === "committee") return m.vote === "committee";
+    if (filter === "committee") return m.vote === "refer";
     return true;
   });
 
-  const leanYay = MEMBERS.filter(m => m.vote === "yay" || m.lean === "lean-yay").length;
-  const leanYayOnly = MEMBERS.filter(m => m.vote !== "yay" && m.lean === "lean-yay").length;
+  const leanYay = MEMBERS.filter(m => m.vote === "proceed" || m.lean === "lean-yay").length;
+  const leanYayOnly = MEMBERS.filter(m => m.vote !== "proceed" && m.lean === "lean-yay").length;
   const leanNay = MEMBERS.filter(m => m.lean === "lean-nay").length;
-  const uncertain = MEMBERS.filter(m => m.lean === "uncertain" || (m.vote === "committee" && m.lean === "committee")).length;
+  const uncertain = MEMBERS.filter(m => m.lean === "uncertain").length;
 
   return (
     <div style={{ display: "flex", minHeight: "100vh", background: C.bg, color: T.body, fontFamily: "Georgia, serif" }}>
@@ -397,18 +398,21 @@ export default function App() {
         <div style={{ padding: "12px 16px", borderBottom: `1px solid ${C.border}` }}>
           <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 8 }}>Sections</div>
           {[
-            { id: "scoreboard", label: "Vote Result" },
-            { id: "map", label: "District Map" },
-            { id: "members", label: "Council Members" },
-            { id: "feasibility", label: "$300K Study Status" },
-            { id: "sentiment", label: "Current Sentiment" },
-            { id: "analysis", label: "Path to 8 Votes" },
-            { id: "rebuilding", label: "Rebuilding Progress" },
-            { id: "comparison", label: "CRD vs DRD" },
-            { id: "sources", label: "Sources" },
+            { id: "scoreboard", label: "1. Dec 9 Vote", indent: false },
+            { id: "map", label: "- District Map", indent: true },
+            { id: "members", label: "- Council Members", indent: true },
+            { id: "feasibility", label: "- $300K Study Status", indent: true },
+            { id: "sentiment", label: "2. Current Status", indent: false },
+            { id: "comparison", label: "3. CRD vs DRD", indent: false },
+            { id: "strategy", label: "4. Strategy", indent: false },
+            { id: "analysis", label: "- Path to 8 Votes", indent: true },
+            { id: "levers", label: "- 3 Levers", indent: true },
+            { id: "modules", label: "- Analysis Modules", indent: true },
+            { id: "diagram", label: "- Strategy Diagram", indent: true },
+            { id: "references", label: "5. References", indent: false },
           ].map(s => (
             <button key={s.id} onClick={() => { document.getElementById(s.id)?.scrollIntoView({ behavior: "smooth", block: "start" }); setSidebarOpen(false); }}
-              style={{ display: "block", width: "100%", textAlign: "left", padding: "5px 10px", marginBottom: 2, borderRadius: 6, border: "none", background: "transparent", color: T.sub, cursor: "pointer", fontSize: 11.5, fontFamily: "Georgia, serif" }}>
+              style={{ display: "block", width: "100%", textAlign: "left", padding: s.indent ? "4px 10px 4px 22px" : "6px 10px", marginBottom: 1, borderRadius: 6, border: "none", background: "transparent", color: s.indent ? T.faint : T.sub, cursor: "pointer", fontSize: s.indent ? 11 : 11.5, fontFamily: "Georgia, serif", fontWeight: s.indent ? 400 : 500 }}>
               {s.label}
             </button>
           ))}
@@ -418,8 +422,8 @@ export default function App() {
           <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 8 }}>Members by Vote</div>
           {[
             { key: "all", label: "All 15 Members" },
-            { key: "yay", label: "YAY / Lean YAY" },
-            { key: "committee", label: "Sent to Committee" },
+            { key: "yay", label: "Voted to Proceed / Lean Support" },
+            { key: "committee", label: "Voted to Refer (YES on referral)" },
             { key: "uncertain", label: "Uncertain" },
             { key: "nay", label: "Lean NAY" },
           ].map(f => (
@@ -437,7 +441,7 @@ export default function App() {
         <div style={{ padding: "12px 16px", flex: 1 }}>
           <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 8 }}>Districts</div>
           {MEMBERS.map(m => {
-            const col = m.vote === "yay" ? C.yay : m.lean === "lean-nay" ? C.nay : m.lean === "lean-yay" ? "#65a30d" : C.committee;
+            const col = m.vote === "proceed" ? C.yay : m.lean === "lean-nay" ? C.nay : m.lean === "lean-yay" ? "#65a30d" : "#94a3b8";
             return (
               <button key={m.id} onClick={() => { setSelected(m.id === selected ? null : m.id); setSidebarOpen(false); }}
                 style={{ display: "flex", alignItems: "center", gap: 8, width: "100%", textAlign: "left", padding: "5px 8px", borderRadius: 6, border: "none", background: selected === m.id ? "#f0f9ff" : "transparent", cursor: "pointer", marginBottom: 1 }}>
@@ -451,7 +455,7 @@ export default function App() {
         </div>
 
         <div style={{ padding: "12px 16px", borderTop: `1px solid ${C.border}`, fontSize: 9.5, color: T.faint, lineHeight: 1.5 }}>
-          Based on Dec 9, 2025 vote + public statements. Lean assessments are analytical, not official positions.
+          Dec 9 vote was procedural only — not a vote on DRD itself. Lean assessments based on public statements and district interests, not the referral vote.
         </div>
       </aside>
 
@@ -472,30 +476,31 @@ export default function App() {
               By December 9, EWDD had completed a study recommending a $300K boundary and feasibility analysis. Park pivoted on the floor to a <strong>substitute motion for a Disaster Recovery District (DRD) under SB 782</strong> — a faster, fire-specific tool — and proposed funding it from the Economic Development Trust Fund. She had also separately secured SCAG funding so the study would have no general fund impact.
             </p>
             <p style={{ fontSize: 14, color: T.sub, margin: 0, lineHeight: 1.7, maxWidth: 620 }}>
-              The council voted <strong>10–5</strong> to refer the entire matter back to the Budget &amp; Finance and Economic Development committees — not a vote on the DRD itself, but on whether to even study it. Budget &amp; Finance Chair Yaroslavsky argued the city first needed a citywide analysis of how TIF districts affect the general fund. That broader analysis also remains unfinished. <strong>8 votes needed to move forward.</strong>
+              On December 9, the council voted <strong>10–5</strong> on a procedural motion by Yaroslavsky and Blumenfield to refer the entire matter — including Park's substitute DRD motion — to the Budget &amp; Finance and Economic Development committees. <strong>This was not a vote on the DRD itself.</strong> The 10 who voted YES were voting to send it to committee; their actual positions on the DRD are largely unknown. Only the 5 who voted NO — opposing the referral — can be identified as likely DRD supporters. Budget &amp; Finance Chair Yaroslavsky has publicly raised fiscal concerns, but the other 9 YES votes have not stated public positions. <strong>8 of 15 council votes are needed for the study to pass.</strong>
             </p>
           </div>
 
           {/* VOTE SCOREBOARD */}
+
           <div id="scoreboard" style={{ marginBottom: 36 }}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 12 }}>
               <div style={{ background: C.yayBg, border: `1px solid ${C.yayBorder}`, borderRadius: 10, padding: "16px 20px" }}>
-                <div style={{ fontSize: 30, fontWeight: 700, color: C.yay }}>{VOTE_COUNTS.yay}</div>
-                <div style={{ fontSize: 12, fontWeight: 600, color: T.heading, marginTop: 2 }}>Voted YAY</div>
-                <div style={{ fontSize: 10.5, color: T.sub, marginTop: 2 }}>For the study — Dec 9, 2025</div>
+                <div style={{ fontSize: 30, fontWeight: 700, color: C.yay }}>{VOTE_COUNTS.proceed}</div>
+                <div style={{ fontSize: 12, fontWeight: 600, color: T.heading, marginTop: 2 }}>Voted to Proceed</div>
+                <div style={{ fontSize: 10.5, color: T.sub, marginTop: 4, lineHeight: 1.5 }}>NO on Yaroslavsky-Blumenfield referral motion · DRD position: likely supportive</div>
               </div>
-              <div style={{ background: C.committeeBg, border: `1px solid ${C.committeeBorder}`, borderRadius: 10, padding: "16px 20px" }}>
-                <div style={{ fontSize: 30, fontWeight: 700, color: C.committee }}>{VOTE_COUNTS.committee}</div>
-                <div style={{ fontSize: 12, fontWeight: 600, color: T.heading, marginTop: 2 }}>Sent to Committee</div>
-                <div style={{ fontSize: 10.5, color: T.sub, marginTop: 2 }}>Delayed — not a hard NAY</div>
+              <div style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: 10, padding: "16px 20px" }}>
+                <div style={{ fontSize: 30, fontWeight: 700, color: "#64748b" }}>{VOTE_COUNTS.refer}</div>
+                <div style={{ fontSize: 12, fontWeight: 600, color: T.heading, marginTop: 2 }}>Voted to Refer</div>
+                <div style={{ fontSize: 10.5, color: T.sub, marginTop: 4, lineHeight: 1.5 }}>YES on referral motion · DRD position: unknown — reasons vary by member</div>
               </div>
             </div>
             <div style={{ background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: 10, padding: "12px 20px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
               <div style={{ fontSize: 13, color: "#1e3a8a" }}>
-                <strong>Result on feasibility study vote: 10–5</strong> against fast-tracking
+                <strong>Dec 9, 2025 · Procedural vote only</strong> — Yaroslavsky-Blumenfield motion to refer passed 10–5
               </div>
               <div style={{ fontSize: 12, color: "#3b82f6" }}>
-                Needs <strong>8 of 15</strong> votes to pass · {8 - VOTE_COUNTS.yay} more YAY needed
+                Needs <strong>8 of 15</strong> council votes to pass the DRD feasibility study
               </div>
             </div>
           </div>
@@ -505,7 +510,7 @@ export default function App() {
             <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 8 }}>Projected Outcome</div>
             <div style={{ height: 32, borderRadius: 8, overflow: "hidden", display: "flex", border: `1px solid ${C.border}` }}>
               <div style={{ width: `${(VOTE_COUNTS.yay / 15) * 100}%`, background: C.yay, display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <span style={{ fontSize: 11, fontWeight: 700, color: "white" }}>{VOTE_COUNTS.yay} YAY</span>
+                <span style={{ fontSize: 11, fontWeight: 700, color: "white" }}>{VOTE_COUNTS.proceed} Proceed</span>
               </div>
               <div style={{ width: `${(leanYayOnly / 15) * 100}%`, background: "#65a30d", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <span style={{ fontSize: 11, fontWeight: 700, color: "white" }}>{leanYayOnly} Lean YAY</span>
@@ -523,6 +528,7 @@ export default function App() {
           </div>
 
           {/* MAP + KEY */}
+
           <div id="map" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 36 }}>
             <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>District Map</div>
             <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 16px" }}>15 Council Districts — Schematic</h2>
@@ -536,7 +542,7 @@ export default function App() {
                   {[
                     { col: C.yay, label: "YAY", desc: "Voted for study on Dec 9" },
                     { col: "#65a30d", label: "Lean YAY", desc: "Likely to support if brought back" },
-                    { col: C.committee, label: "→ Committee", desc: "Sent to committee — uncertain" },
+                    { col: "#94a3b8", label: "Voted to Refer", desc: "YES on referral — DRD position unknown" },
                     { col: C.nay, label: "Lean NAY", desc: "Fiscal/equity concerns likely to hold" },
                   ].map(l => (
                     <div key={l.label} style={{ display: "flex", alignItems: "center", gap: 8 }}>
@@ -551,6 +557,7 @@ export default function App() {
           </div>
 
           {/* COUNCIL CARDS */}
+
           <div id="members" style={{ marginBottom: 36 }}>
             <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>All Members</div>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
@@ -567,7 +574,7 @@ export default function App() {
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: 12 }}>
               {filtered.map(m => {
-                const col = m.vote === "yay" ? C.yay : m.lean === "lean-nay" ? C.nay : m.lean === "lean-yay" ? "#65a30d" : C.committee;
+                const col = m.vote === "proceed" ? C.yay : m.lean === "lean-nay" ? C.nay : m.lean === "lean-yay" ? "#65a30d" : "#94a3b8";
                 const isSelected = openCards.has(m.id);
                 return (
                   <div
@@ -619,6 +626,7 @@ export default function App() {
             </div>
           </div>
 
+
           {/* ── $300K FEASIBILITY STUDY STATUS ── */}
           <div id="feasibility" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 24 }}>
             <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>Current Status</div>
@@ -628,7 +636,7 @@ export default function App() {
                 { date: "Jan 15, 2025", label: "Motion introduced", cfLink: "https://cityclerk.lacity.org/lacityclerkconnect/index.cfm?fa=ccfi.viewrecord&cfnumber=25-0006-S38", detail: "Traci Park introduces motion asking EWDD to study feasibility of a Climate Resilience District for the Palisades burn area — the week the fire broke out.", done: true },
                 { date: "Jun 2025", label: "EWDD report completed", detail: "EWDD concludes the idea deserves further study. Recommends $300K for a full feasibility and boundary analysis. Notes CRDs are slow (18–36 months to form) and not useful for short-term disaster recovery.", done: true },
                 { date: "Mid-2025", label: "Budget & Finance: \"note and file\"", detail: "The $300K request is shelved — money wasn't in the budget. Committee says the city needs a citywide fiscal analysis of TIF district impacts before approving any individual study.", done: true },
-                { date: "Dec 9, 2025", label: "Full Council vote — 10–5 to refer back", detail: "Park pivots: substitute motion to pursue a DRD (SB 782) instead of CRD, funded from the Economic Development Trust Fund. She separately secured SCAG funding so there'd be no budget impact. Council still votes 10–5 to send everything back to Budget & Finance and Economic Development committees.", done: true },
+                { date: "Dec 9, 2025", label: "Procedural vote — 10–5 to refer entire matter to committee", detail: "On the floor, Park introduced a substitute motion to pursue a DRD (SB 782) instead of a CRD, funded from the Economic Development Trust Fund with SCAG backup funding (no general fund impact). Yaroslavsky and Blumenfield moved to refer the entire matter — including Park's substitute motion — to Budget & Finance and the Economic Development and Jobs Committee. That referral motion passed 10–5. This was a procedural vote, not a vote on the DRD itself. The 10 YES votes indicate support for committee review, not opposition to the DRD.", done: true },
                 { date: "Now — Feb 2026", label: "Stuck in committee", detail: "Pending in two committees: Budget & Finance (Yaroslavsky chair) and Economic Development. No hearing scheduled. The citywide TIF fiscal impact report Yaroslavsky demanded also hasn't been completed. No public timeline for resolution.", done: false },
               ].map((step, i, arr) => (
                 <div key={step.date} style={{ display: "flex", gap: 14, paddingBottom: i < arr.length - 1 ? 18 : 0 }}>
@@ -654,8 +662,12 @@ export default function App() {
             </div>
           </div>
 
-          {/* ── CURRENT SENTIMENT ── */}
-          <div id="sentiment" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 24 }}>
+
+
+          {/* ── CURRENT STATUS ── */}
+          <div id="sentiment" style={{ marginBottom: 36 }}>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: "#6b7280", textTransform: "uppercase", marginBottom: 12, paddingLeft: 0 }}>2. Current Status</div>
+          <div id="sentiment-inner" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 24 }}>
             <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>As of Feb 2026</div>
             <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 16px" }}>Current Sentiment — 3 Camps</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -723,45 +735,7 @@ export default function App() {
           </div>
 
           {/* ANALYSIS */}
-          <div id="analysis" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 36 }}>
-            <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>Path to 8 Votes</div>
-            <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 14px" }}>What Needs to Change</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-              {[
-                {
-                  title: "The 3 Likely Flips",
-                  color: C.yay,
-                  items: [
-                    "D7 Rodriguez — Frame as citywide wildfire preparedness, not just Palisades",
-                    "D13 Soto-Martinez — Add affordable housing anti-displacement protections",
-                    "D1 Hernandez — Environmental justice framing; emphasize climate adaptation citywide",
-                  ]
-                },
-                {
-                  title: "The Hard Nos",
-                  color: C.nay,
-                  items: [
-                    "D5 Yaroslavsky — Would need budget-neutral TIF structure or separate funding source",
-                    "D8 Harris-Dawson — Needs direct South LA benefit or equity offsets",
-                    "D15 McCosker — Geographic and political distance; lowest likelihood",
-                  ]
-                }
-              ].map(sec => (
-                <div key={sec.title}>
-                  <div style={{ fontSize: 12, fontWeight: 700, color: sec.color, marginBottom: 8 }}>{sec.title}</div>
-                  {sec.items.map((item, i) => (
-                    <div key={i} style={{ display: "flex", gap: 8, marginBottom: 6 }}>
-                      <div style={{ width: 4, height: 4, borderRadius: "50%", background: sec.color, flexShrink: 0, marginTop: 6 }} />
-                      <div style={{ fontSize: 12, color: T.body, lineHeight: 1.6 }}>{item}</div>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
 
-
-          {/* ── REBUILDING STATUS ── */}
           <div id="rebuilding" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 24 }}>
             <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>Recovery Snapshot</div>
             <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 14px" }}>Palisades Rebuilding Progress</h2>
@@ -802,6 +776,9 @@ export default function App() {
             <div style={{ marginTop: 14, background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: 8, padding: "10px 14px", fontSize: 11.5, color: "#1e40af", lineHeight: 1.6 }}>
               <strong>Timeline:</strong> Full community recovery is projected on a <strong>5–10 year horizon</strong>, particularly for major infrastructure overhauls. Some homes are already being rebuilt but the pace depends heavily on insurance resolution and financing tools like the DRD.
             </div>
+          </div>
+
+
           </div>
 
           {/* ── CRD vs DRD DECISION ── */}
@@ -846,77 +823,655 @@ export default function App() {
             </div>
           </div>
 
-          {/* ── SOURCES ── */}
-          <div id="sources" style={{ marginBottom: 36 }}>
-            <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 10 }}>Sources &amp; Further Reading</div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+
+
+          {/* ── STRATEGY ── */}
+          <div id="strategy" style={{ marginBottom: 36 }}>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: "#6b7280", textTransform: "uppercase", marginBottom: 12 }}>4. Strategy — Reaching 8 out of 15 Votes</div>
+
+            {/* STRATEGY OVERVIEW */}
+            <div style={{ background: "white", border: `1px solid ${C.border}`, borderLeft: "4px solid #1e3a8a", borderRadius: 10, padding: "18px 22px", marginBottom: 24 }}>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "#1e3a8a", textTransform: "uppercase", marginBottom: 4 }}>Overview</div>
+              <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 12px" }}>What We Need — and Why</h2>
+              <p style={{ fontSize: 13, color: T.body, lineHeight: 1.75, margin: "0 0 10px" }}>
+                On December 9, 2025, the LA City Council voted 10–5 to refer a $300K feasibility study for a Pacific Palisades Disaster Recovery District (DRD) back to committee — effectively stalling it with no scheduled hearing. The study would have assessed whether a DRD, a tax increment financing mechanism authorized under SB 782, could fund long-term infrastructure recovery in the Palisades burn zone. Securing the study's passage requires 8 out of 15 council votes. The political will exists among several members who voted to delay — Rodriguez (D7), Soto-Martinez (D13), and Hernandez (D1) all have district-level reasons to support recovery investment. What's missing is the argument that lands in <em>their</em> districts, not just CD11.
+              </p>
+              <p style={{ fontSize: 13, color: T.body, lineHeight: 1.75, margin: "0 0 10px" }}>
+                Yaroslavsky's stated objection is fiscal: TIF diverts property tax increment from the general fund. That objection hasn't been answered with numbers — only with urgency arguments, which lost. The counter-argument she hasn't seen is the <strong>cost of inaction</strong>: if Palisades recovery stalls, the tax base she's protecting erodes anyway.
+              </p>
+              <p style={{ fontSize: 13, color: T.body, lineHeight: 1.75, margin: "0 0 14px" }}>
+                The strategy has two components that must work together: <strong>3 political levers</strong> targeting specific council members and coalitions, and <strong>3 analysis modules</strong> producing the data each lever needs to be persuasive. Right now the levers exist but lack numbers. The analysis provides those numbers — and the coalition delivers them to the right districts.
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+                <div style={{ background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: 8, padding: "10px 14px" }}>
+                  <div style={{ fontSize: 10, fontWeight: 700, color: "#1d4ed8", marginBottom: 4 }}>Data we need to produce</div>
+                  <div style={{ fontSize: 11.5, color: T.body, lineHeight: 1.65 }}>Property tax revenue scenarios (cost of inaction), citywide employment multipliers by geography, insurance market stabilization mechanism with FAIR Plan data</div>
+                </div>
+                <div style={{ background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 8, padding: "10px 14px" }}>
+                  <div style={{ fontSize: 10, fontWeight: 700, color: "#047857", marginBottom: 4 }}>Arguments we need to land</div>
+                  <div style={{ fontSize: 11.5, color: T.body, lineHeight: 1.65 }}>DRD doesn't cost the general fund — a failed recovery does. Recovery jobs go to South/East LA. Insurance crisis is citywide, not a Palisades problem.</div>
+                </div>
+              </div>
+            </div>
+
+
+          <div id="analysis" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 36 }}>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>Strategy · Step 1</div>
+            <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 14px" }}>What Needs to Change</h2>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
               {[
                 {
-                  href: "https://cityclerk.lacity.org/lacityclerkconnect/index.cfm?fa=ccfi.viewrecord&cfnumber=25-0006-S38",
-                  title: "City Clerk Council File 25-0006-S38",
-                  sub: "LA City Clerk · Park's original motion — Climate Resilience District / Pacific Palisades · Mover: Park, Second: Nazarian",
-                  accent: C.yay,
+                  title: "The 3 Likely Flips",
+                  color: C.yay,
+                  items: [
+                    "D7 Rodriguez — Frame as citywide wildfire preparedness, not just Palisades",
+                    "D13 Soto-Martinez — Add affordable housing anti-displacement protections",
+                    "D1 Hernandez — Environmental justice framing; emphasize climate adaptation citywide",
+                  ]
                 },
                 {
-                  href: "https://www.dailynews.com/2025/12/09/l-a-city-council-splits-on-study-for-palisades-climate-resilience-district/",
-                  title: "LA City Council splits on study for Palisades climate resilience district",
-                  sub: "Los Angeles Daily News · December 9, 2025 · Council vote 10–5",
-                  accent: C.palisades,
-                },
-                {
-                  href: "https://marvistavoice.org/city-council-pumps-the-brakes-on-palisades-climate-resilience-district-study/",
-                  title: "City Council Pumps the Brakes on Palisades Climate Resilience District Study",
-                  sub: "Mar Vista Voice · December 12, 2025 · Yaroslavsky's objections in detail",
-                  accent: C.palisades,
-                },
-                {
-                  href: "https://cd11.lacity.gov/palisades-recovery-updates",
-                  title: "Palisades Recovery Updates — Council District 11",
-                  sub: "Council District 11 (Traci Park) · Ongoing recovery updates, Park's office",
-                  accent: C.committee,
-                },
-                {
-                  href: "https://timesofsandiego.com/opinion/2025/12/26/californias-fire-victims-can-take-control-climate-resilience-district/",
-                  title: "California's fire victims can take control with a climate resilience district",
-                  sub: "Times of San Diego · Opinion · Dec 26, 2025 · Case for CRD as permanent governance, not just financing",
-                  accent: "#047857",
-                },
-                {
-                  href: "https://democracylocal.substack.com/p/column-how-victims-of-climate-disaster",
-                  title: "How Survivors of Climate Disaster Can Form Their Own Governments",
-                  sub: "Democracy Local · Jan 2, 2026 · Argues for larger cross-jurisdictional CRD spanning Palisades, Topanga, Malibu",
-                  accent: "#047857",
-                },
-                {
-                  href: "https://marvistavoice.org/city-council-pumps-the-brakes-on-palisades-climate-resilience-district-study/",
-                  title: "City Council Pumps the Brakes on Palisades Climate Resilience District Study",
-                  sub: "Mar Vista Voice · Dec 12, 2025 · Yaroslavsky's fiscal objections in detail",
-                  accent: C.committee,
-                },
-                {
-                  href: "https://palisades-tif-districts.vercel.app/",
-                  title: "California TIF Districts: RDA → IFD → EIFD → CRD → DRD",
-                  sub: "Reference app · Detailed breakdown of all California TIF district types, formation process, eligible spending, and CRD vs DRD comparison",
-                  accent: "#047857",
-                },
-              ].map(s => (
-                <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer"
-                  style={{ display: "flex", justifyContent: "space-between", alignItems: "center", background: C.surface, border: `1px solid ${C.border}`, borderLeft: `3px solid ${s.accent}`, borderRadius: 8, padding: "12px 16px", textDecoration: "none" }}>
-                  <div>
-                    <div style={{ fontSize: 13, fontWeight: 600, color: T.heading }}>{s.title}</div>
-                    <div style={{ fontSize: 11, color: T.faint, marginTop: 2 }}>{s.sub}</div>
-                  </div>
-                  <span style={{ fontSize: 14, color: s.accent, flexShrink: 0, marginLeft: 12 }}>↗</span>
-                </a>
+                  title: "The Hard Nos",
+                  color: C.nay,
+                  items: [
+                    "D5 Yaroslavsky — Would need budget-neutral TIF structure or separate funding source",
+                    "D8 Harris-Dawson — Needs direct South LA benefit or equity offsets",
+                    "D15 McCosker — Geographic and political distance; lowest likelihood",
+                  ]
+                }
+              ].map(sec => (
+                <div key={sec.title}>
+                  <div style={{ fontSize: 12, fontWeight: 700, color: sec.color, marginBottom: 8 }}>{sec.title}</div>
+                  {sec.items.map((item, i) => (
+                    <div key={i} style={{ display: "flex", gap: 8, marginBottom: 6 }}>
+                      <div style={{ width: 4, height: 4, borderRadius: "50%", background: sec.color, flexShrink: 0, marginTop: 6 }} />
+                      <div style={{ fontSize: 12, color: T.body, lineHeight: 1.6 }}>{item}</div>
+                    </div>
+                  ))}
+                </div>
               ))}
             </div>
+          </div>
+
+
+
+          {/* ── 3 LEVERS IN DEPTH ── */}
+          <div id="levers" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 36 }}>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>Political Strategy</div>
+            <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 4px" }}>3 Levers — In Depth</h2>
+            <p style={{ fontSize: 12, color: T.sub, margin: "0 0 20px", lineHeight: 1.6 }}>
+              Each lever targets a different failure point in the December 9 vote. Together, they address the fiscal objection, reframe the ask, and build cross-district constituent pressure.
+            </p>
+
+            {[
+              {
+                num: "1",
+                color: C.nay,
+                bg: C.nayBg,
+                border: C.nayBorder,
+                label: "THE CRISIS MEMO",
+                title: "Flip the Fiscal Frame",
+                target: "Primary target: Yaroslavsky (D5, Budget & Finance Chair)",
+                body: [
+                  {
+                    t: "The problem",
+                    p: `Yaroslavsky's stated objection is that TIF districts divert property tax increment from the general fund for decades — and with LA facing a $1B budget deficit, she argues the city can't afford to lock up future revenue. On December 9, Park made the urgency argument verbally — the study has SCAG funding, there's no budget impact. It wasn't enough. The referral passed anyway. The problem wasn't the argument — it was the absence of numbers showing what inaction actually costs.`
+                  },
+                  {
+                    t: "The reframe",
+                    p: `Palisades is one of the highest-value property tax bases in LA City. The 90272 and 90402 zip codes generate disproportionate assessed value relative to their land area. If recovery stalls and only 30–50% of homeowners rebuild — as happened in Paradise after the Camp Fire — the property tax increment Yaroslavsky is "protecting" disappears anyway. The DRD doesn't cost the general fund. A failed recovery destroys it.`
+                  },
+                  {
+                    t: "The deliverable",
+                    p: `A 2-page memo to the Budget & Finance Committee quantifying two scenarios: (A) no DRD, 50% non-rebuild rate over 10 years — projected general fund revenue loss; (B) DRD with accelerated rebuild — recovered and growing tax base. The delta is the "cost of inaction." AECOM's February 2026 reports already establish the ~$1B infrastructure gap through 2033. The memo attaches a tax revenue projection to those rebuild scenarios.`,
+                    links: [
+                      { text: "AECOM infrastructure reports via CD11", href: "https://cd11.lacity.gov/palisades-recovery-updates" },
+                      { text: "Council File 25-0006-S38", href: "https://cityclerk.lacity.org/lacityclerkconnect/index.cfm?fa=ccfi.viewrecord&cfnumber=25-0006-S38" },
+                      { text: "Mar Vista Voice — Yaroslavsky's objections in detail", href: "https://marvistavoice.org/city-council-pumps-the-brakes-on-palisades-climate-resilience-district-study/" },
+                    ]
+                  },
+                ]
+              },
+              {
+                num: "2",
+                color: "#047857",
+                bg: "#f0fdf4",
+                border: "#bbf7d0",
+                label: "CAPITAL STACK FRAMING",
+                title: "Make the Ask Smaller",
+                target: "Primary targets: Yaroslavsky (D5), Blumenfield (D3), McCosker (D15) — the fiscal conservatives",
+                body: [
+                  {
+                    t: "The problem",
+                    p: `The current debate treats the DRD as the solution — the primary recovery mechanism. That framing is losing. Fiscally conservative members see it as an untested tool they're being asked to bet the recovery on, with no clarity on how much of the total financing gap it actually covers. Saying "we need a DRD" without contextualizing it in a larger stack makes it sound like a bigger commitment than it is.`
+                  },
+                  {
+                    t: "The reframe",
+                    p: `TIF/increment capture is a lagging instrument. It doesn't generate Day 1 liquidity — it services long-term infrastructure debt once property values recover, typically 3–7 years post-formation. That means the DRD sits in the lower-middle of any rational recovery financing stack. Above it: federal infrastructure programs, state IBank financing, FEMA hazard mitigation grants. Below it: philanthropic first-loss capital, community foundation grants. The DRD is not the bet. It's one layer.`
+                  },
+                  {
+                    t: "The political logic",
+                    p: `Yaroslavsky can support a DRD as part of a responsible multi-instrument strategy more easily than she can support it as the city's sole recovery mechanism. Framing it this way also opens the door to complementary instruments — California IBank has deployed disaster recovery financing before, and the state has strong incentive to prevent LA's insurance market from further collapsing. A capital stack diagram showing the DRD's proportional role makes the ask concrete and bounded.`,
+                    links: [
+                      { text: "California IBank — Infrastructure State Revolving Fund", href: "https://ibank.ca.gov/infrastructure-state-revolving-fund-program/" },
+                      { text: "Democracy Local — Cross-jurisdictional CRD argument", href: "https://democracylocal.substack.com/p/column-how-victims-of-climate-disaster" },
+                    ]
+                  },
+                ]
+              },
+              {
+                num: "3",
+                color: C.committee,
+                bg: C.committeeBg,
+                border: C.committeeBorder,
+                label: "COALITION PRESSURE",
+                title: "Bring the Right Voices to the Right Districts",
+                target: "Primary targets: Rodriguez (D7), Soto-Martinez (D13), Hernandez (D1) — the lean-YAY flip votes",
+                body: [
+                  {
+                    t: "The problem",
+                    p: `On December 9, the only organized pressure came from CD11. The referral motion passed 10–5 — but of the 10 who voted to refer, most have not stated a public position on the DRD itself. Rodriguez (D7), Soto-Martinez (D13), and Hernandez (D1) are among those whose DRD positions remain unknown. They don't need to be "flipped" from opposition — they need to be given a reason to actively support the study in their own districts. "Palisades residents want this" is not that reason.`
+                  },
+                  {
+                    t: "The three coalition partners",
+                    p: `PPCC (Pacific Palisades Community Council) is the formal neighborhood council with institutional standing at City Hall — it can sign joint letters, submit formal comment, and testify at committee hearings. WRAC (Westside Regional Alliance of Councils) already went on record supporting the study, representing 14 neighborhood councils across CD5, CD10, CD11 and parts of CD4 — that's geographic coverage well beyond Palisades. PRC (Palisades Recovery Coalition) has the ground-level organizing infrastructure: weekly LAPD Community Advisory Group coordination, monthly impact reports, and resident-led credibility that political bodies lack.`,
+                    links: [
+                      { text: "Palisades Recovery Coalition (PRC)", href: "https://palirecovery.org/" },
+                      { text: "CD11 Recovery Updates — Park's office", href: "https://cd11.lacity.gov/palisades-recovery-updates" },
+                    ]
+                  },
+                  {
+                    t: "The message for each district",
+                    p: `Rodriguez (D7, San Fernando Valley including Canoga Park and Reseda): Fire risk is real and proximate. The DRD's infrastructure hardening — undergrounded utilities, fire-resistant construction standards, hardened hydrant systems — reduces wildfire exposure across the entire urban-wildland interface, not just in Palisades. Soto-Martinez (D13, Silver Lake / Echo Park / Hollywood): Climate infrastructure investment framed as environmental justice. Module 2's employment data shows construction jobs go to East and South LA workers. Hernandez (D1, northeast LA including Lincoln Heights and Elysian Valley): Environmental justice + insurance equity angle. The FAIR Plan enrollment surge is hitting lower-income LA homeowners hardest. Infrastructure hardening in Palisades reduces the tail-risk that's driving insurers out of every LA zip code.`,
+                    links: [
+                      { text: "Times of San Diego — DRD as citywide governance tool", href: "https://timesofsandiego.com/opinion/2025/12/26/californias-fire-victims-can-take-control-climate-resilience-district/" },
+                      { text: "Daily News — December 9 vote coverage", href: "https://www.dailynews.com/2025/12/09/l-a-city-council-splits-on-study-for-palisades-climate-resilience-district/" },
+                    ]
+                  },
+                ]
+              },
+            ].map(lever => (
+              <div key={lever.num} style={{ marginBottom: 24, border: `1px solid ${lever.border}`, borderLeft: `4px solid ${lever.color}`, borderRadius: 10, overflow: "hidden" }}>
+                <div style={{ background: lever.bg, padding: "12px 18px", display: "flex", alignItems: "center", gap: 10 }}>
+                  <div style={{ width: 24, height: 24, borderRadius: "50%", background: lever.color, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    <span style={{ fontSize: 11, fontWeight: 700, color: "white" }}>{lever.num}</span>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: 8.5, letterSpacing: 2, color: lever.color, textTransform: "uppercase" }}>{lever.label}</div>
+                    <div style={{ fontSize: 14, fontWeight: 700, color: T.heading }}>{lever.title}</div>
+                  </div>
+                </div>
+                <div style={{ background: "#fafafa", padding: "4px 18px 6px", borderBottom: `1px solid ${lever.border}` }}>
+                  <span style={{ fontSize: 10.5, color: T.faint, fontStyle: "italic" }}>{lever.target}</span>
+                </div>
+                <div style={{ padding: "16px 18px" }}>
+                  {lever.body.map((block, i) => (
+                    <div key={i} style={{ marginBottom: i < lever.body.length - 1 ? 14 : 0 }}>
+                      <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", color: lever.color, marginBottom: 4 }}>{block.t}</div>
+                      <p style={{ fontSize: 12.5, color: T.body, lineHeight: 1.75, margin: "0 0 8px" }}>{block.p}</p>
+                      {block.links && (
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                          {block.links.map(lk => (
+                            <a key={lk.href} href={lk.href} target="_blank" rel="noopener noreferrer"
+                              style={{ fontSize: 10.5, color: lever.color, background: lever.bg, border: `1px solid ${lever.border}`, borderRadius: 4, padding: "2px 8px", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 3 }}>
+                              {lk.text} ↗
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+
+
+          {/* ── ANALYSIS MODULES ── */}
+          <div id="modules" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 36 }}>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>Student Research Project · RAND</div>
+            <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 4px" }}>Analysis Modules — The Citywide Case</h2>
+            <p style={{ fontSize: 12, color: T.sub, margin: "0 0 6px", lineHeight: 1.6 }}>
+              Research question: Does accelerated Palisades recovery through a DRD produce measurable fiscal and economic benefits for the broader City of Los Angeles — beyond the Palisades itself?
+            </p>
+            <p style={{ fontSize: 11, color: T.faint, margin: "0 0 20px", lineHeight: 1.6, fontStyle: "italic" }}>
+              Independent student research. Does not represent an official RAND Corporation position.
+            </p>
+
+            {[
+              {
+                num: "01",
+                color: "#1d4ed8",
+                bg: "#eff6ff",
+                border: "#bfdbfe",
+                label: "MODULE 1",
+                title: "Palisades as a Fiscal Pillar of LA's General Fund",
+                framing: "\"The DRD doesn't divert tax increment. A failed recovery destroys it.\"",
+                framingFor: "→ Framing for Yaroslavsky (D5)",
+                argument: `Yaroslavsky's stated concern is that TIF diverts property tax increment from the general fund. This module shows the other side: if recovery stalls, the tax base the city is supposedly protecting erodes anyway — possibly more severely than any TIF diversion would cause. Palisades zip codes (90272, 90402) represent among the highest assessed-value real estate in LA City. Post-fire, that base is at risk.`,
+                analysis: [
+                  "Baseline: Current assessed value + annual property tax contribution from Palisades zip codes to LA City and County general funds",
+                  "Scenario A (No DRD): Model 30%, 50%, and 70% non-rebuild rates. Project assessed value loss and corresponding general fund revenue loss over 10 years.",
+                  "Scenario B (DRD): Model accelerated rebuild timeline with infrastructure hardening. Project recovered assessed value trajectory.",
+                  "Delta: Net fiscal difference between scenarios — this is the quantified \"cost of inaction.\"",
+                ],
+                note: "A scenario-based spreadsheet with documented assumptions is sufficient — more legible to a policy audience than a full econometric model. Comparable: Camp Fire (Paradise, CA) — Butte County Assessor data on assessed value loss 2018–2023 shows what happens when recovery is slow.",
+                sources: [
+                  { text: "LA County Assessor — parcel-level assessed values", href: "https://assessor.lacounty.gov" },
+                  { text: "LA County Auditor-Controller — property tax apportionment by city", href: "https://auditorcontroller.lacounty.gov" },
+                  { text: "CA Board of Equalization — annual property tax report", href: "https://www.boe.ca.gov/annual/index.html" },
+                  { text: "CD11 Recovery Updates — AECOM infrastructure reports", href: "https://cd11.lacity.gov/palisades-recovery-updates" },
+                ],
+              },
+              {
+                num: "02",
+                color: "#047857",
+                bg: "#f0fdf4",
+                border: "#bbf7d0",
+                label: "MODULE 2",
+                title: "Citywide Employment & Economic Multiplier Effects",
+                framing: "\"The workers who rebuild Palisades live in South LA and East LA. Every month of delay is a month of lost wages in your district.\"",
+                framingFor: "→ Framing for Rodriguez (D7), Soto-Martinez (D13), Harris-Dawson (D8)",
+                argument: `Palisades reconstruction is not an economic event contained to one neighborhood. Construction labor, materials supply chains, and commercial recovery generate jobs and income across LA County — disproportionately benefiting working-class communities in South LA and East LA. This module makes the DRD a D8 and D14 argument, not just a CD11 argument.`,
+                analysis: [
+                  "Estimate total construction spending required for full Palisades rebuild (structure replacement value × projected rebuild rate)",
+                  "Apply IMPLAN or BEA RIMS II multipliers to estimate direct, indirect, and induced employment effects",
+                  "Disaggregate by geography — construction workforce in LA County skews heavily toward specific zip codes (Boyle Heights, Huntington Park, South Gate)",
+                  "Compare slow vs. fast recovery: what employment is foregone if only 40% rebuild within 5 years vs. 80%?",
+                ],
+                note: "IMPLAN is the gold standard but has a learning curve. BEA RIMS II is a free alternative — transparent multiplier tables work well for a policy audience. The geographic disaggregation is the politically powerful number. RAND likely has institutional IMPLAN access.",
+                sources: [
+                  { text: "BEA RIMS II — Regional Input-Output Multipliers", href: "https://www.bea.gov/regional/rims" },
+                  { text: "CA EDD — Construction employment by zip code", href: "https://labormarketinfo.edd.ca.gov" },
+                  { text: "Census LEHD OnTheMap — Where construction workers live vs. work", href: "https://onthemap.ces.census.gov" },
+                  { text: "LADBS — Permit data (rebuild volume + pace)", href: "https://www.ladbsservices2.lacity.org/OnlineServices/PermitReport/PermitReport" },
+                ],
+              },
+              {
+                num: "03",
+                color: "#b45309",
+                bg: "#fffbeb",
+                border: "#fde68a",
+                label: "MODULE 3",
+                title: "Insurance Market Stabilization",
+                framing: "\"The insurance crisis in Boyle Heights and Sylmar is connected to what happens in Palisades. Infrastructure hardening changes the risk math for the whole city.\"",
+                framingFor: "→ Framing for Hernandez (D1), Soto-Martinez (D13), Harris-Dawson (D8)",
+                argument: `California's insurance crisis is not a Palisades problem — it's an LA County and statewide problem. Insurers use portfolio-level risk models. If Palisades rebuilds with hardened infrastructure (undergrounded utilities, fire-resistant construction, improved hydrant systems), it reduces the tail-risk profile of the entire LA urban-wildland interface. The private insurance exodus is hitting Sylmar, Northridge, and Boyle Heights too. CA FAIR Plan enrollment is surging as a result — and FAIR Plan is undercapitalized.`,
+                analysis: [
+                  "Document current insurance withdrawal: non-renewal rates by zip code in LA County, including non-Palisades areas",
+                  "Show the mechanism: private market exit → FAIR Plan enrollment surge → undercapitalized FAIR Plan → systemic risk to all LA homeowners",
+                  "Establish the link: infrastructure hardening in high-risk zones reduces insurer loss exposure → creates conditions for private market re-entry",
+                  "Frame DRD's infrastructure spending as risk reduction that benefits the entire insurer portfolio in LA, not just Palisades properties",
+                ],
+                note: "This module is necessarily more qualitative than Modules 1 and 2. Frame it as a mechanism analysis rather than a quantitative projection. Even a clear causal chain with supporting FAIR Plan data is politically powerful. RAND has prior published work on wildfire insurance in California — use it as an anchor citation.",
+                sources: [
+                  { text: "CA Department of Insurance — non-renewal data by zip code", href: "https://www.insurance.ca.gov" },
+                  { text: "CA FAIR Plan — enrollment data by county (via CDI)", href: "https://www.cfpnet.com" },
+                  { text: "RAND (2025) — After the LA Wildfires: Insurance & Risk Mitigation", href: "https://www.rand.org/pubs/conf_proceedings/CFA3937-1.html" },
+                  { text: "First Street Foundation — wildfire exposure by parcel", href: "https://firststreet.org" },
+                ],
+              },
+            ].map(mod => (
+              <div key={mod.num} style={{ marginBottom: 24, border: `1px solid ${mod.border}`, borderLeft: `4px solid ${mod.color}`, borderRadius: 10, overflow: "hidden" }}>
+                <div style={{ background: mod.bg, padding: "12px 18px", display: "flex", alignItems: "flex-start", gap: 12 }}>
+                  <div style={{ fontSize: 22, fontWeight: 700, color: mod.color, opacity: 0.3, lineHeight: 1, flexShrink: 0, fontFamily: "Georgia, serif" }}>{mod.num}</div>
+                  <div>
+                    <div style={{ fontSize: 8.5, letterSpacing: 2, color: mod.color, textTransform: "uppercase" }}>{mod.label}</div>
+                    <div style={{ fontSize: 14, fontWeight: 700, color: T.heading }}>{mod.title}</div>
+                  </div>
+                </div>
+
+                <div style={{ padding: "14px 18px 0" }}>
+                  <div style={{ background: mod.bg, border: `1px solid ${mod.border}`, borderRadius: 6, padding: "8px 12px", marginBottom: 12 }}>
+                    <div style={{ fontSize: 10, color: mod.color, fontWeight: 600, marginBottom: 2 }}>{mod.framingFor}</div>
+                    <div style={{ fontSize: 12, color: T.body, fontStyle: "italic", lineHeight: 1.6 }}>{mod.framing}</div>
+                  </div>
+
+                  <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", color: mod.color, marginBottom: 4 }}>Core Argument</div>
+                  <p style={{ fontSize: 12.5, color: T.body, lineHeight: 1.75, margin: "0 0 12px" }}>{mod.argument}</p>
+
+                  <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", color: mod.color, marginBottom: 6 }}>Analysis Steps</div>
+                  <div style={{ marginBottom: 12 }}>
+                    {mod.analysis.map((step, i) => (
+                      <div key={i} style={{ display: "flex", gap: 8, marginBottom: 5 }}>
+                        <div style={{ width: 16, height: 16, borderRadius: "50%", background: mod.bg, border: `1px solid ${mod.color}`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 1 }}>
+                          <span style={{ fontSize: 8, fontWeight: 700, color: mod.color }}>{i + 1}</span>
+                        </div>
+                        <p style={{ fontSize: 12, color: T.body, lineHeight: 1.65, margin: 0 }}>{step}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", color: mod.color, marginBottom: 4 }}>Methodological Note</div>
+                  <p style={{ fontSize: 12, color: T.faint, lineHeight: 1.65, margin: "0 0 12px", fontStyle: "italic" }}>{mod.note}</p>
+
+                  <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", color: mod.color, marginBottom: 6 }}>Key Data Sources</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6, paddingBottom: 16 }}>
+                    {mod.sources.map(s => (
+                      <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer"
+                        style={{ fontSize: 10.5, color: mod.color, background: mod.bg, border: `1px solid ${mod.border}`, borderRadius: 4, padding: "3px 9px", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 3 }}>
+                        {s.text} ↗
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+
+            {/* Summary table */}
+            <div style={{ marginTop: 4 }}>
+              <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", color: T.faint, marginBottom: 8 }}>The Citywide Dividend — Summary</div>
+              <div style={{ overflowX: "auto" }}>
+                <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 12, minWidth: 500 }}>
+                  <thead>
+                    <tr style={{ background: "#f1f5f9" }}>
+                      <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600, color: T.sub, border: `1px solid ${C.border}` }}></th>
+                      <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600, color: C.nay, border: `1px solid ${C.border}` }}>Without DRD</th>
+                      <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600, color: C.yay, border: `1px solid ${C.border}` }}>With DRD</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ["LA General Fund", "Property tax base erodes, revenue loss over 10 years", "TIF diversion offset by recovered + growing tax base"],
+                      ["Employment", "Foregone construction jobs, slower multiplier effect across LA", "Jobs across LA County, concentrated in South/East LA"],
+                      ["Insurance Market", "Continued private market exit, FAIR Plan strain citywide", "Infrastructure hardening reduces tail risk, creates re-entry conditions"],
+                    ].map(([label, no, yes]) => (
+                      <tr key={label}>
+                        <td style={{ padding: "8px 12px", fontWeight: 600, color: T.heading, border: `1px solid ${C.border}`, background: "#fafafa" }}>{label}</td>
+                        <td style={{ padding: "8px 12px", color: T.body, border: `1px solid ${C.border}`, lineHeight: 1.5 }}>{no}</td>
+                        <td style={{ padding: "8px 12px", color: T.body, border: `1px solid ${C.border}`, lineHeight: 1.5 }}>{yes}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+
+          {/* ── STRATEGY DIAGRAM ── */}
+          <div id="diagram" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "20px 24px", marginBottom: 36 }}>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 4 }}>Strategy</div>
+            <h2 style={{ fontSize: 16, fontWeight: 700, color: T.heading, margin: "0 0 4px" }}>Reaching 8 out of 15 — The Coordinated Push</h2>
+            <p style={{ fontSize: 12, color: T.sub, margin: "0 0 20px", lineHeight: 1.6 }}>
+              The December 9 procedural referral passed 10–5, stalling the study. Each pressure point for moving it forward is currently operating independently. The strategy below connects them into a single coordinated push.
+            </p>
+
+            {/* ENGINE ROW */}
+            <div style={{ background: "#1e3a8a", borderRadius: 10, padding: "14px 18px", marginBottom: 6, position: "relative" }}>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "#93c5fd", textTransform: "uppercase", marginBottom: 3 }}>The Engine</div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: "white", marginBottom: 4 }}>Financial Analysis — "The Citywide Case for Palisades DRD"</div>
+              <div style={{ fontSize: 11.5, color: "#bfdbfe", lineHeight: 1.65 }}>
+                A RAND student research project quantifying what a stalled Palisades recovery actually costs LA as a whole — in property tax revenue, employment, and insurance market stability.
+                Produces two outputs: a <strong style={{ color: "white" }}>technical report</strong> (credibility) and a <strong style={{ color: "white" }}>2-page policy memo</strong> (the instrument).
+              </div>
+              <div style={{ display: "flex", gap: 8, marginTop: 10, flexWrap: "wrap" }}>
+                {["Module 1: Property Tax Scenarios", "Module 2: Employment Multipliers", "Module 3: Insurance Market"].map(m => (
+                  <span key={m} style={{ fontSize: 10, background: "#1e40af", color: "#bfdbfe", border: "1px solid #3b82f6", borderRadius: 4, padding: "2px 8px" }}>{m}</span>
+                ))}
+              </div>
+            </div>
+
+            {/* CONNECTOR */}
+            <div style={{ display: "flex", justifyContent: "center", margin: "0 0 6px" }}>
+              <div style={{ width: 1, height: 16, background: C.border }} />
+            </div>
+            <div style={{ display: "flex", justifyContent: "center", marginBottom: 6 }}>
+              <span style={{ fontSize: 9, color: T.faint, letterSpacing: 1 }}>POWERS ALL THREE LEVERS</span>
+            </div>
+            <div style={{ display: "flex", justifyContent: "center", margin: "0 0 10px" }}>
+              <div style={{ width: 1, height: 16, background: C.border }} />
+            </div>
+
+            {/* THREE LEVERS */}
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10, marginBottom: 10 }}>
+              {[
+                {
+                  num: "1",
+                  title: "Crisis Memo",
+                  color: C.nay,
+                  bg: C.nayBg,
+                  border: C.nayBorder,
+                  target: "→ Yaroslavsky (D5)",
+                  weakness: "Park argued urgency verbally. Lost.",
+                  powered: "Module 1 attaches dollar figures to inaction. Flips the frame: \"can the city afford to block it?\"",
+                  ask: "50% non-rebuild = $X lost in 10 years",
+                },
+                {
+                  num: "2",
+                  title: "Capital Stack Framing",
+                  color: "#047857",
+                  bg: "#f0fdf4",
+                  border: "#bbf7d0",
+                  target: "→ Fiscal conservatives broadly",
+                  weakness: "DRD framed as the solution. Too risky.",
+                  powered: "Modules 1+2 scope the full recovery financing need. DRD = lower-middle layer only, not first-loss capital. Yaroslavsky can say yes to a stack.",
+                  ask: "DRD ≠ primary bet. It's one instrument.",
+                },
+                {
+                  num: "3",
+                  title: "Coalition Pressure",
+                  color: C.committee,
+                  bg: C.committeeBg,
+                  border: C.committeeBorder,
+                  target: "→ Rodriguez D7, Soto-Martinez D13, Hernandez D1",
+                  weakness: "Pressure was only from CD11. Wrong audience.",
+                  powered: "Module 2 shows construction jobs go to South/East LA. Module 3 shows insurance crisis hits Sylmar + Boyle Heights too.",
+                  ask: "PPCC + WRAC + PRC carry this to the right districts.",
+                },
+              ].map(lever => (
+                <div key={lever.num} style={{ background: lever.bg, border: `1px solid ${lever.border}`, borderLeft: `3px solid ${lever.color}`, borderRadius: 8, padding: "12px 14px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 6 }}>
+                    <div style={{ width: 20, height: 20, borderRadius: "50%", background: lever.color, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <span style={{ fontSize: 10, fontWeight: 700, color: "white" }}>{lever.num}</span>
+                    </div>
+                    <span style={{ fontSize: 12, fontWeight: 700, color: T.heading }}>{lever.title}</span>
+                  </div>
+                  <div style={{ fontSize: 10, fontWeight: 600, color: lever.color, marginBottom: 6 }}>{lever.target}</div>
+                  <div style={{ fontSize: 10.5, color: T.faint, marginBottom: 6, fontStyle: "italic" }}>Problem: {lever.weakness}</div>
+                  <div style={{ fontSize: 10.5, color: T.body, lineHeight: 1.6, marginBottom: 8 }}>{lever.powered}</div>
+                  <div style={{ fontSize: 10, background: "white", border: `1px solid ${lever.border}`, borderRadius: 4, padding: "4px 8px", color: lever.color, fontWeight: 600 }}>{lever.ask}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* CONNECTOR */}
+            <div style={{ display: "flex", justifyContent: "center", margin: "0 0 6px" }}>
+              <div style={{ width: 1, height: 16, background: C.border }} />
+            </div>
+            <div style={{ display: "flex", justifyContent: "center", marginBottom: 6 }}>
+              <span style={{ fontSize: 9, color: T.faint, letterSpacing: 1 }}>CONVERGES ON</span>
+            </div>
+            <div style={{ display: "flex", justifyContent: "center", margin: "0 0 10px" }}>
+              <div style={{ width: 1, height: 16, background: C.border }} />
+            </div>
+
+            {/* OUTCOME */}
+            <div style={{ background: C.yayBg, border: `1px solid ${C.yayBorder}`, borderLeft: `3px solid ${C.yay}`, borderRadius: 10, padding: "14px 18px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16, flexWrap: "wrap" }}>
+              <div>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: C.yay, textTransform: "uppercase", marginBottom: 3 }}>Target Outcome</div>
+                <div style={{ fontSize: 14, fontWeight: 700, color: T.heading }}>8 votes — DRD feasibility study passes</div>
+                <div style={{ fontSize: 11.5, color: T.sub, marginTop: 4, lineHeight: 1.6 }}>
+                  Rodriguez (D7) + Soto-Martinez (D13) + Hernandez (D1) flip to YAY.<br/>
+                  Yaroslavsky's fiscal objection is answered by the numbers. The study moves out of committee.
+                </div>
+              </div>
+              <div style={{ textAlign: "center", flexShrink: 0 }}>
+                <div style={{ fontSize: 32, fontWeight: 700, color: C.yay }}>8 / 15</div>
+                <div style={{ fontSize: 10, color: T.sub }}>votes needed</div>
+              </div>
+            </div>
+
+            <div style={{ marginTop: 14, fontSize: 11, color: T.faint, lineHeight: 1.6, borderTop: `1px solid ${C.border}`, paddingTop: 12 }}>
+              <strong>Note on the analysis:</strong> This is a student research project conducted at RAND. It is independent work and does not represent an official RAND Corporation position or publication.
+            </div>
+          </div>
+
+
+
+          </div>
+          {/* END STRATEGY */}
+
+
+          {/* ── REFERENCES ── */}
+          <div id="references" style={{ marginBottom: 36 }}>
+            <div style={{ fontSize: 9, letterSpacing: 2, color: T.faint, textTransform: "uppercase", marginBottom: 16 }}>5. References &amp; Further Reading</div>
+
+            {[
+              {
+                group: "Primary Sources",
+                color: C.yay,
+                items: [
+                  {
+                    href: "https://cityclerk.lacity.org/lacityclerkconnect/index.cfm?fa=ccfi.viewrecord&cfnumber=25-0006-S38",
+                    title: "City Clerk Council File 25-0006-S38",
+                    sub: "LA City Clerk · Park's original motion — Climate Resilience / Disaster Recovery District, Pacific Palisades · Mover: Park, Second: Nazarian",
+                    tag: "CF 25-0006-S38",
+                  },
+                  {
+                    href: "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB782",
+                    title: "SB 782 — Disaster Recovery Districts",
+                    sub: "California Legislature · Authorizing statute for DRD formation, expedited process, protest threshold removal, eligible spending",
+                    tag: "Statute",
+                  },
+                ],
+              },
+              {
+                group: "News & Analysis",
+                color: C.palisades,
+                items: [
+                  {
+                    href: "https://www.dailynews.com/2025/12/09/l-a-city-council-splits-on-study-for-palisades-climate-resilience-district/",
+                    title: "LA City Council splits on study for Palisades climate resilience district",
+                    sub: "Los Angeles Daily News · December 9, 2025 · Council vote 10–5 · Park's motion, Yaroslavsky's objections, referral to committee",
+                    tag: "Lever 1 · Lever 3",
+                  },
+                  {
+                    href: "https://marvistavoice.org/city-council-pumps-the-brakes-on-palisades-climate-resilience-district-study/",
+                    title: "City Council Pumps the Brakes on Palisades Climate Resilience District Study",
+                    sub: "Mar Vista Voice · December 12, 2025 · Yaroslavsky's fiscal objections — general fund concerns, TIF diversion, $1B budget deficit context",
+                    tag: "Lever 1",
+                  },
+                  {
+                    href: "https://timesofsandiego.com/opinion/2025/12/26/californias-fire-victims-can-take-control-climate-resilience-district/",
+                    title: "California's fire victims can take control with a climate resilience district",
+                    sub: "Times of San Diego · Opinion · Dec 26, 2025 · DRD/CRD as permanent governance tool, citywide wildfire resilience framing",
+                    tag: "Lever 3",
+                  },
+                  {
+                    href: "https://democracylocal.substack.com/p/column-how-victims-of-climate-disaster",
+                    title: "How Survivors of Climate Disaster Can Form Their Own Governments",
+                    sub: "Democracy Local · Jan 2, 2026 · Cross-jurisdictional CRD spanning Palisades, Topanga, Malibu — capital stack framing context",
+                    tag: "Lever 2 · Lever 3",
+                  },
+                ],
+              },
+              {
+                group: "Recovery & Community",
+                color: C.committee,
+                items: [
+                  {
+                    href: "https://cd11.lacity.gov/palisades-recovery-updates",
+                    title: "Palisades Recovery Updates — Council District 11",
+                    sub: "Council District 11 (Traci Park) · AECOM reports, permit data, ongoing rebuilding progress, Park's office updates",
+                    tag: "Lever 1 · Module 1",
+                  },
+                  {
+                    href: "https://palirecovery.org/",
+                    title: "Palisades Recovery Coalition (PRC)",
+                    sub: "Resident-led recovery organizing · Weekly LAPD CAG coordination, monthly impact reports, charrette partnership with RAND and AIA",
+                    tag: "Lever 3",
+                  },
+                  {
+                    href: "https://ibank.ca.gov/infrastructure-state-revolving-fund-program/",
+                    title: "California IBank — Infrastructure State Revolving Fund",
+                    sub: "California Infrastructure and Economic Development Bank · Disaster recovery financing, state-level capital stack instrument",
+                    tag: "Lever 2",
+                  },
+                ],
+              },
+              {
+                group: "Research & Data Sources",
+                color: "#1d4ed8",
+                items: [
+                  {
+                    href: "https://www.rand.org/pubs/conf_proceedings/CFA3937-1.html",
+                    title: "After the Los Angeles Wildfires: Implications for Risk Mitigation, Compensation, and the Insurance Market",
+                    sub: "RAND Corporation · Dixon, Anderson, Morikawa · Aug 2025 · CF-A3937-1 · Insurance market implications, mitigation, resilience — anchor citation for Module 3",
+                    tag: "Module 3",
+                  },
+                  {
+                    href: "https://assessor.lacounty.gov",
+                    title: "LA County Assessor — Parcel-Level Assessed Values",
+                    sub: "Property tax base data for zip codes 90272, 90402 (Pacific Palisades) — primary data source for Module 1",
+                    tag: "Module 1",
+                  },
+                  {
+                    href: "https://www.bea.gov/regional/rims",
+                    title: "BEA RIMS II — Regional Input-Output Multipliers",
+                    sub: "Bureau of Economic Analysis · Free regional economic multipliers for employment and income impact — Module 2 primary methodology",
+                    tag: "Module 2",
+                  },
+                  {
+                    href: "https://onthemap.ces.census.gov",
+                    title: "Census LEHD OnTheMap — Where Workers Live vs. Work",
+                    sub: "Longitudinal Employer-Household Dynamics · Geographic disaggregation of where LA County construction workers live — key for D8/D14 framing",
+                    tag: "Module 2",
+                  },
+                  {
+                    href: "https://www.insurance.ca.gov",
+                    title: "CA Department of Insurance — Non-Renewal Data by ZIP Code",
+                    sub: "Annual insurer market share reports, non-renewal rates by zip code, FAIR Plan enrollment trends — primary data source for Module 3",
+                    tag: "Module 3",
+                  },
+                  {
+                    href: "https://firststreet.org",
+                    title: "First Street Foundation — Wildfire Exposure by Parcel",
+                    sub: "Risk model data on wildfire exposure — supplementary data for insurance mechanism analysis in Module 3",
+                    tag: "Module 3",
+                  },
+                ],
+              },
+              {
+                group: "Reference Tools",
+                color: "#047857",
+                items: [
+                  {
+                    href: "https://palisades-tif-districts.vercel.app/",
+                    title: "California TIF Districts Reference App — RDA → IFD → EIFD → CRD → DRD",
+                    sub: "Detailed breakdown of all California TIF district types, formation requirements, eligible spending, CRD vs DRD comparison, protest thresholds",
+                    tag: "Background",
+                  },
+                ],
+              },
+            ].map(group => (
+              <div key={group.group} style={{ marginBottom: 20 }}>
+                <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", color: group.color, marginBottom: 8, paddingLeft: 4 }}>{group.group}</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                  {group.items.map(s => (
+                    <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer"
+                      style={{ display: "flex", justifyContent: "space-between", alignItems: "center", background: "white", border: `1px solid ${C.border}`, borderLeft: `3px solid ${group.color}`, borderRadius: 8, padding: "10px 14px", textDecoration: "none" }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 2, flexWrap: "wrap" }}>
+                          <span style={{ fontSize: 12.5, fontWeight: 600, color: T.heading }}>{s.title}</span>
+                          <span style={{ fontSize: 9, background: group.color + "15", color: group.color, border: `1px solid ${group.color}40`, borderRadius: 3, padding: "1px 5px", whiteSpace: "nowrap" }}>{s.tag}</span>
+                        </div>
+                        <div style={{ fontSize: 11, color: T.faint, lineHeight: 1.5 }}>{s.sub}</div>
+                      </div>
+                      <span style={{ fontSize: 13, color: group.color, flexShrink: 0, marginLeft: 12 }}>↗</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
 
           {/* FOOTER */}
           <div style={{ borderTop: `1px solid ${C.border}`, paddingTop: 20, fontSize: 11, color: T.faint, lineHeight: 1.7 }}>
             <div style={{ marginBottom: 6, color: T.sub, fontWeight: 600 }}>Last updated: February 20, 2026</div>
             <div style={{ background: "#fffbeb", border: `1px solid ${C.committeeBorder}`, borderRadius: 8, padding: "10px 14px", fontSize: 11, color: T.sub }}>
-              <strong>Disclaimer:</strong> The December 9, 2025 vote was on a motion to refer a $300K feasibility study to committee — not on the DRD itself. "Lean" positions are analytical assessments based on public statements, district interests, and voting history. They are not official positions. Verify all details before relying on this for planning or advocacy purposes.
+              <strong>Disclaimer:</strong> The December 9, 2025 council vote was a procedural vote on a Yaroslavsky-Blumenfield motion to refer the entire matter to committee — it was <em>not</em> a vote on the DRD itself. The 10 YES votes indicate support for committee referral only; individual DRD positions for most of those members are unknown. The 5 NO votes (Park, Nazarian, Price Jr., Hutt, Lee) opposed the referral and can reasonably be identified as DRD supporters. Lean assessments are analytical judgments based on public statements and district interests — they are not official positions. Verify all details before relying on this for planning or advocacy.
             </div>
           </div>
         </div>
